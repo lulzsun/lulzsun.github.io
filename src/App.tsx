@@ -1,7 +1,9 @@
 import ColumnHeader from "./components/columnHeader"
 import win95 from './assets/win95-2.png'
 import replaysPreview from './assets/replays-preview.png'
+import gecgosPreview from './assets/gecgos-preview.png'
 import { Github, Linkedin, FileEarmarkPdf } from 'react-bootstrap-icons';
+import ProjectCard from "./components/projectCard";
 
 function App() {
   return (
@@ -10,13 +12,13 @@ function App() {
         <div className="flex flex-row">
           <div className="flex flex-col">
             <div className="pb-4 text-red-400">Hello! My name is</div>
-            <div className="pb-4 text-red-200 text-3xl md:text-4xl lg:text-5xl">Jimmy Quach.</div>
+            <div className="pb-4 text-red-300 text-3xl md:text-4xl lg:text-5xl">Jimmy Quach.</div>
             <div className="pb-4 text-stone-400 text-3xl md:text-4xl lg:text-5xl whitespace-nowrap">
               I build cool stuff.
             </div>
           </div>
           <div className="grow"></div>
-          <div className="h-40 w-40 rounded-full overflow-hidden" style={{"minWidth": "10rem"}}>
+          <div className="h-40 w-40 rounded-full overflow-hidden drop-shadow-lg" style={{"minWidth": "10rem"}}>
             <img className="h-40 max-w-none relative" src={"https://avatars.githubusercontent.com/u/28168454?v=4"}/>
           </div>
         </div>
@@ -67,7 +69,7 @@ function App() {
                 It all started when I was learning how to create rom hacks for GameBoy Pokemon games in my early teens. 
                 I continued to invest my interests in computers and technology since then.
               </span>
-              <div className="h-40 rounded-full overflow-hidden" style={{"minWidth": "10rem"}}>
+              <div className="h-40 rounded-full overflow-hidden drop-shadow-lg" style={{"minWidth": "10rem"}}>
                 <img className="h-40 max-w-none relative" src={win95}/>
               </div>
             </div>
@@ -92,7 +94,7 @@ function App() {
             <span className="text-red-400 pl-1">&#125;</span>
           </div>
           <div className="pb-4 text-stone-200">
-            Today, I am currently focusing on building full stack web and desktop applications. <br/><br/>
+            I am currently focusing on building full stack web and desktop applications. <br/><br/>
             Here are the technologies that I have been working with for software development:
           </div>
           <div className="grid grid-rows-3 grid-flow-col gap-3">
@@ -100,10 +102,10 @@ function App() {
               Javascript / Typescript
             </span></div>
             <div className="flex"><span className="px-2">•</span><span>
-              Golang
+              C# / .NET
             </span></div>
             <div className="flex"><span className="px-2">•</span><span>
-              C# / .NET
+              Go
             </span></div>
             <div className="flex"><span className="px-2">•</span><span>
               PostgreSQL
@@ -127,10 +129,10 @@ function App() {
               3D printing & modeling in Fusion360
             </span></div>
             <div className="flex"><span className="px-2">•</span><span>
-              Soldering & hobby electrical work
+              Microcontroller firmware (Arduino, RP2040)
             </span></div>
             <div className="flex"><span className="px-2">•</span><span>
-              Microcontroller firmware (Arduino, RP2040)
+              Soldering & hobby electrical work
             </span></div>
           </div>
         </div>
@@ -150,17 +152,28 @@ function App() {
             <span className="text-stone-400">/* Projects */</span>
             <span className="text-red-400 pl-1">&#125;</span>
           </div>
-          <div>
-            <div className="text-stone-400 text-xl p-3">// RePlays</div>
-            <div className="relative pb-8">
-              <img className="rounded-lg drop-shadow-lg h-56" src={replaysPreview}/>
-              <div className="absolute left-1/2 bottom-0 rounded-xl drop-shadow-lg bg-stone-800 p-4">
-                <span>
-                  RePlays is a free and open source program that automatically manages recording of detected running games, with a clip editor that allows for quick video sharing.
-                </span>
-              </div>
-            </div>
+          <div className="-mb-2 text-stone-200">
+            Here are the highlights of some of the projects that I have worked on:
           </div>
+          <ProjectCard rightAlign={true} image={replaysPreview} title="RePlays"
+            github="https://github.com/lulzsun/RePlays"
+          >
+            <span>
+              RePlays is a free and open source program that automatically 
+              manages recording of detected running games, with a clip editor 
+              that allows for quick video sharing.
+            </span>
+          </ProjectCard>
+          <ProjectCard rightAlign={false} image={gecgosPreview} title="Gecgos.io"
+            github="https://github.com/lulzsun/gecgos.io"
+          >
+            <span>
+              Gecgos.io is a reimplementation
+              of <a className="underline underline-offset-2 text-red-300" href="https://github.com/geckos.io/geckos.io"> geckos.io</a> in
+              written in Go, which is a library for real-time udp client/server 
+              communication using WebRTC.
+            </span>
+          </ProjectCard>
         </div>
         <div className="pt-4 flex flex-row">
           <span className="text-white-200">"</span>
