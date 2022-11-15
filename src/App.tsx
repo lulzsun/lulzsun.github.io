@@ -1,13 +1,80 @@
-import ColumnHeader from "./components/columnHeader"
-import win95 from './assets/win95-2.png'
-import replaysPreview from './assets/replays-preview.png'
-import gecgosPreview from './assets/gecgos-preview.png'
-import { Github, Linkedin, FileEarmarkPdf, Envelope } from 'react-bootstrap-icons';
-import ProjectCard from "./components/projectCard";
+import ColumnHeader from "./components/ColumnHeader";
+import ProjectCard from "./components/ProjectCard";
+import win95 from './assets/win95-2.png';
+import replaysPreview from './assets/replays-preview.png';
+import gecgosPreview from './assets/gecgos-preview.png';
+import Modal from 'react-modal';
+import { useState } from "react";
+import { Resume, ResumePDF } from "./components/Resume";
+import { pdf } from '@react-pdf/renderer';
+import { saveAs } from 'file-saver';
+import { Github, Linkedin, FileEarmarkPdf, Envelope, XLg, Download, Printer } from 'react-bootstrap-icons';
+
+Modal.setAppElement('#root');
 
 function App() {
+  const [modalIsOpen, setIsOpen] = useState(false);
+
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
+
   return (
     <div className="flex flex-col items-center h-screen mt-10">
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        onAfterOpen={() => document.body.style.overflow = 'hidden'}
+        onAfterClose={() => document.body.style.overflow = 'unset'}
+        overlayClassName="fixed inset-0 z-50"
+        className="focus:outline-none absolute top-0 bottom-0 right-0 left-0 md:top-20 md:bottom-20 md:right-20 md:left-20 p-6 md:rounded-lg"
+        style={{
+          overlay: {
+            backgroundColor: 'rgba(0, 0, 0, 0.5)'
+          },
+          content: {
+            backgroundColor: 'rgb(32 32 32)'
+          }
+        }}
+        contentLabel="Resume Modal"
+      >
+        <div className="flex flex-col h-full">
+          <div className="w-full flex-initial">
+            <div className="flex gap-3 md:absolute md:mt-0 -mt-2 mb-4 float-left left-0 -top-5 -left-5">
+              <a onClick={async () => {
+                let blob = await pdf(Resume()).toBlob();
+                saveAs(blob, "Jimmy Quach's Resume.pdf");
+              }} className="cursor-pointer group overflow-hidden bg-neutral-800 w-auto h-11 rounded-full drop-shadow-lg flex justify-center items-center text-white hover:bg-neutral-500 hover:drop-shadow-2xl duration-300">
+                <div className="inline-flex items-center place-content-center px-4">
+                  <Download/> <span className="pl-3.5 whitespace-nowrap">Download</span>
+                </div>
+              </a>
+              <a onClick={async () => {
+                let blob = await pdf(Resume()).toBlob();
+                let pdfFile = URL.createObjectURL(blob);
+                window.open(pdfFile, "PRINT");
+              }} className="cursor-pointer group overflow-hidden bg-neutral-800 w-11 h-11 rounded-full drop-shadow-lg flex justify-center items-center text-white hover:bg-neutral-500 hover:drop-shadow-2xl duration-300">
+                <div className="inline-flex items-center place-content-center">
+                  <Printer/>
+                </div>
+              </a>
+            </div>
+
+            <a onClick={closeModal} className="md:absolute md:mt-0 -mt-2 mb-4 float-right right-0 -top-5 -right-5 cursor-pointer group overflow-hidden bg-neutral-800 w-11 h-11 rounded-full drop-shadow-lg flex justify-center items-center text-white hover:bg-neutral-500 hover:drop-shadow-2xl duration-300">
+              <div className="items-center place-content-center">
+                <XLg/>
+              </div>
+            </a>
+          </div>
+          <div className="pt-0 md:pt-4 flex-auto">
+            <ResumePDF/>
+          </div>
+        </div>
+      </Modal>
       <div className="sm:w-3/4 md:w-4/6 lg:w-3/5 xl:w-2/5 p-6">
         <div className="flex flex-row">
           <div className="flex flex-col">
@@ -42,7 +109,7 @@ function App() {
               <Linkedin/> <span className="pl-3.5">Linkedin</span>
             </div>
           </a>
-          <a className="cursor-pointer group overflow-hidden bg-neutral-800 w-32 md:w-11 hover:w-32 h-11 rounded-full drop-shadow-lg flex justify-center items-center text-white hover:bg-neutral-500 hover:drop-shadow-2xl duration-300">
+          <a onClick={openModal} className="cursor-pointer group overflow-hidden bg-neutral-800 w-32 md:w-11 hover:w-32 h-11 rounded-full drop-shadow-lg flex justify-center items-center text-white hover:bg-neutral-500 hover:drop-shadow-2xl duration-300">
             <div className="md:fixed left-3.5 inline-flex items-center place-content-center">
               <FileEarmarkPdf/> <span className="pl-3.5">Resume</span>
             </div>
@@ -70,7 +137,7 @@ function App() {
                 I continued to invest my interests in computers and technology since then.
               </span>
               <div className="h-40 rounded-full overflow-hidden drop-shadow-lg" style={{"minWidth": "10rem"}}>
-                <img className="h-40 max-w-none relative" src={win95}/>
+                <img className="h-44 max-w-none relative -top-0.5 -left-4" src={win95}/>
               </div>
             </div>
             <br/>
@@ -169,7 +236,7 @@ function App() {
           >
             <span>
               Gecgos.io is a reimplementation
-              of <a className="underline underline-offset-2 text-red-300" href="https://github.com/geckos.io/geckos.io"> geckos.io</a> in
+              of <a className="underline underline-offset-2 text-red-300" href="https://github.com/geckosio/geckos.io">geckos.io</a> in
               written in Go, which is a library for real-time UDP client/server 
               communication using WebRTC.
             </span>
@@ -196,7 +263,7 @@ function App() {
           </div>
         </a>
         <span>•</span>
-        <a className="hover:underline underline-offset-2 hover:text-red-300" href="">
+        <a onClick={openModal} className="hover:underline underline-offset-2 hover:text-red-300 cursor-pointer">
           <div className="inline-flex items-center place-content-center">
             <FileEarmarkPdf/> <span className="pl-3.5">Resume</span>
           </div>
