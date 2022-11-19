@@ -1,6 +1,7 @@
 import ColumnHeader from "./components/ColumnHeader";
 import ProjectCard from "./components/ProjectCard";
 import win95 from './assets/win95-2.png';
+import profilePicture from './assets/linkedin-profilepic.jpg';
 import replaysPreview from './assets/replays-preview.png';
 import gecgosPreview from './assets/gecgos-preview.png';
 import Modal from 'react-modal';
@@ -86,7 +87,8 @@ function App() {
           </div>
           <div className="grow"></div>
           <div className="h-40 w-40 rounded-full overflow-hidden drop-shadow-lg" style={{"minWidth": "10rem"}}>
-            <img className="h-40 max-w-none relative" src={"https://avatars.githubusercontent.com/u/28168454?v=4"}/>
+            <img className="h-40 max-w-none relative" src={profilePicture}/> 
+            {/* src={"https://avatars.githubusercontent.com/u/28168454?v=4"}/> */}
           </div>
         </div>
         <div className="text-stone-200">
