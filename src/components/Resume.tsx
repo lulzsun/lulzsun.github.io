@@ -50,7 +50,8 @@ const styles = StyleSheet.create({
     fontFamily: 'Petrona',
     fontSize: '11pt',
     flexDirection: 'column',
-    width: '6.3in'
+    width: '6.3in',
+    marginBottom: '4pt',
   }
 });
 
@@ -98,7 +99,7 @@ const Resume = () => (
         <View style={{paddingBottom: '2pt', flexDirection: 'row'}}>
           <Text style={{fontStyle: 'bold'}}>Noteworthy Courses: </Text>
         </View>
-        <View style={{paddingBottom: '8pt', flexDirection: 'row'}}>
+        <View style={{paddingBottom: '4pt', flexDirection: 'row'}}>
           <Text style={{flex: 1}}>
             Algorithm Engineering,
             Computer Organization & Assembly Language Programming,
@@ -126,7 +127,7 @@ const Resume = () => (
           <Text style={{flex: "0.4pt"}}>Frameworks/Libraries:</Text>
           <Text style={{flex: 1}}>.NET Core, Node.js, Next.js, React, TailwindCSS, Three.js</Text>
         </View>
-        <View style={{paddingBottom: '8pt', width: '6.3in', flexDirection: 'row'}}>
+        <View style={{paddingBottom: '5pt', width: '6.3in', flexDirection: 'row'}}>
           <Text style={{flex: "0.4pt"}}>Software/Tools:</Text>
           <Text style={{flex: 1}}>Git, Visual Studio, VS Code, MongoDB, PostgreSQL, Supabase</Text>
         </View>
