@@ -2,7 +2,7 @@ import ColumnHeader from "./components/columnHeader"
 import win95 from './assets/win95-2.png'
 import replaysPreview from './assets/replays-preview.png'
 import gecgosPreview from './assets/gecgos-preview.png'
-import { Github, Linkedin, FileEarmarkPdf } from 'react-bootstrap-icons';
+import { Github, Linkedin, FileEarmarkPdf, Envelope } from 'react-bootstrap-icons';
 import ProjectCard from "./components/projectCard";
 
 function App() {
@@ -170,7 +170,7 @@ function App() {
             <span>
               Gecgos.io is a reimplementation
               of <a className="underline underline-offset-2 text-red-300" href="https://github.com/geckos.io/geckos.io"> geckos.io</a> in
-              written in Go, which is a library for real-time udp client/server 
+              written in Go, which is a library for real-time UDP client/server 
               communication using WebRTC.
             </span>
           </ProjectCard>
@@ -183,8 +183,36 @@ function App() {
 {/*        */}
 {/* FOOTER */}
 {/*        */}
-      <div className="flex flex-col sm:w-3/4 md:w-4/6 lg:w-3/5 xl:w-2/5 p-6">
+      <div className="flex flex-row sm:w-3/4 md:w-4/6 lg:w-3/5 xl:w-2/5 pt-16 md:pb-16 place-content-center items-center gap-6">
+        <a className="hover:underline underline-offset-2 hover:text-red-300" href="https://github.com/lulzsun">
+          <div className="inline-flex items-center place-content-center">
+            <Github/> <span className="pl-3.5">GitHub</span>
+          </div>
+        </a>
+        <span>•</span>
+        <a className="hover:underline underline-offset-2 hover:text-red-300" href="https://www.linkedin.com/in/jminquach/">
+          <div className="inline-flex items-center place-content-center">
+            <Linkedin/> <span className="pl-3.5">LinkedIn</span>
+          </div>
+        </a>
+        <span>•</span>
+        <a className="hover:underline underline-offset-2 hover:text-red-300" href="">
+          <div className="inline-flex items-center place-content-center">
+            <FileEarmarkPdf/> <span className="pl-3.5">Resume</span>
+          </div>
+        </a>
+        <span className="hidden md:block">•</span>
+        <a className="hidden md:block hover:underline underline-offset-2 hover:text-red-300" href="mailto:jminquach@gmail.com">
+          <div className="inline-flex items-center place-content-center">
+            <Envelope/> <span className="pl-3.5 whitespace-nowrap">Contact Me</span>
+          </div>
+        </a>
       </div>
+      <a className="pb-16 pt-3 md:hidden block hover:underline underline-offset-2 hover:text-red-300" href="mailto:jminquach@gmail.com">
+        <div className="inline-flex items-center place-content-center">
+          <Envelope/> <span className="pl-3.5 whitespace-nowrap">Contact Me</span>
+        </div>
+      </a>
     </div>
   )
 }
