@@ -12,13 +12,19 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@react-pdf/renderer": "^3.0.1",
+    "events": "^3.3.0",
+    "file-saver": "^2.0.5",
     "react": "^18.2.0",
     "react-bootstrap-icons": "^1.9.1",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-modal": "^3.16.1"
   },
   "devDependencies": {
+    "@types/file-saver": "^2.0.5",
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
+    "@types/react-modal": "^3.13.1",
     "@vitejs/plugin-react": "^2.2.0",
     "autoprefixer": "^10.4.13",
     "gh-pages": "^4.0.0",
