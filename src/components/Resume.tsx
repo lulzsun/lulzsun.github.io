@@ -33,8 +33,8 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     fontSize: '11pt',
     width: '6.3in',
-    paddingLeft: '1.2in',
-    paddingRight: '1.2in',
+    paddingLeft: '0.5in',
+    paddingRight: '0.5in',
     marginBottom: '8pt'
   },
   heading: {
@@ -71,6 +71,8 @@ const Resume = () => (
           <Text style={{textAlign: "center"}}>Fullerton, CA</Text>
           <Text style={{flex: 1, textAlign: "center", fontSize: '20pt', fontStyle: 'bold', marginTop: '-5pt'}}>•</Text>
           <Text style={{textAlign: "center"}}>jminquach@gmail.com</Text>
+          <Text style={{flex: 1, textAlign: "center", fontSize: '20pt', fontStyle: 'bold', marginTop: '-5pt'}}>•</Text>
+          <Text style={{textAlign: "center"}}>lulzsun.github.io</Text>
         </View>
       {/* </View> */}
       <View style={styles.heading}>
