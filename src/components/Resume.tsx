@@ -86,7 +86,7 @@ const Resume = () => (
         </View>
         <View style={{paddingBottom: '4pt', flexDirection: 'row'}}>
           <Text style={{flex: 1}}>Bachelor of Science In Computer Science</Text>
-          <Text style={{textAlign: "right"}}>Expected: Aug. 2024</Text>
+          <Text style={{textAlign: "right"}}>Expected: June 2024</Text>
         </View>o
         <View style={{paddingBottom: '2pt', flexDirection: 'row'}}>
           <Text style={{flex: 1, fontStyle: 'bold'}}>Fullerton College</Text>
@@ -174,7 +174,7 @@ const Resume = () => (
           <Text style={{textAlign: "right"}}>github.com/lulzsun/gecgos.io</Text>
         </View>
         <View style={{paddingBottom: '4pt', flexDirection: 'row'}}>
-          <Text style={{flex: 1}}>A reimplementation of an open source library called
+          <Text style={{flex: 1}}>A re-implementation of an open source library called
             Geckos.io written in Go, allowing for performant, real-time, client-server model
             UDP network communication using WebRTC.
           </Text>
