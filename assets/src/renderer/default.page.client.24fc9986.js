@@ -1,0 +1,1 @@
+import{a as e,R as c}from"../../chunks/949a628a.js";import{r as n}from"../../chunks/c6cda039.js";var t={},o=n.exports;t.createRoot=o.createRoot,t.hydrateRoot=o.hydrateRoot;async function s(r){const{Page:a}=r;t.createRoot(document.getElementById("root")).render(e(c.StrictMode,{children:e(a,{})}))}export{s as render};
