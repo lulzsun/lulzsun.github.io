@@ -1,0 +1,1 @@
+import{j as a,F as o}from"../../chunks/0cc98cea.js";const e={title:"Jimmy Quach | Blog",description:"Jimmy Quach's amazingly awesome and cool blog."};function i(){return a(o,{children:"view all posts"})}export{i as Page,e as metaData};
