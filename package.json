@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d dist/client",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
@@ -18,7 +18,8 @@
     "react": "^18.2.0",
     "react-bootstrap-icons": "^1.9.1",
     "react-dom": "^18.2.0",
-    "react-modal": "^3.16.1"
+    "react-modal": "^3.16.1",
+    "vite-plugin-ssr": "^0.4.94"
   },
   "devDependencies": {
     "@types/file-saver": "^2.0.5",

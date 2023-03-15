@@ -1,14 +1,11 @@
 import { Page, Text, View, Document, Font, StyleSheet, PDFViewer } from '@react-pdf/renderer';
-import regular from '../assets/fonts/Petrona-Regular.ttf'
-import bold from '../assets/fonts/Petrona-Bold.ttf'
-import italic from '../assets/fonts/Petrona-Italic.ttf'
 
 // Register Fonts
 Font.register({ family: 'Petrona', fonts: 
   [
-    { src: regular },
-    { src: bold, fontStyle: 'bold' },
-    { src: italic, fontStyle: 'italic' }
+    { src: '/fonts/Petrona-Regular.ttf' },
+    { src: '/fonts/Petrona-Bold.ttf', fontStyle: 'bold' },
+    { src: '/fonts/Petrona-Italic.ttf', fontStyle: 'italic' }
   ] 
 });
 

@@ -1,19 +1,20 @@
-import ColumnHeader from "./components/ColumnHeader";
-import ProjectCard from "./components/ProjectCard";
-import win95 from './assets/win95-2.png';
-import profilePicture from './assets/linkedin-profilepic.jpg';
-import replaysPreview from './assets/replays-preview.png';
-import gecgosPreview from './assets/gecgos-preview.png';
+import ColumnHeader from "../components/ColumnHeader";
+import ProjectCard from "../components/ProjectCard";
 import Modal from 'react-modal';
 import { useState } from "react";
-import { Resume, ResumePDF } from "./components/Resume";
+import { Resume, ResumePDF } from "../components/Resume";
 import { pdf } from '@react-pdf/renderer';
 import { saveAs } from 'file-saver';
 import { Github, Linkedin, FileEarmarkPdf, Envelope, XLg, Download, Printer } from 'react-bootstrap-icons';
 
 Modal.setAppElement('#root');
 
-function App() {
+export const meta = {
+  title: 'Jimmy Quach | Portfolio',
+  description: "Jimmy Quach's portfolio website and blog"
+}
+
+function Page() {
   const [modalIsOpen, setIsOpen] = useState(false);
 
   function openModal() {
@@ -87,7 +88,7 @@ function App() {
           </div>
           <div className="grow"></div>
           <div className="h-40 w-40 rounded-full overflow-hidden drop-shadow-lg" style={{"minWidth": "10rem"}}>
-            <img className="h-40 max-w-none relative" src={profilePicture}/> 
+            <img className="h-40 max-w-none relative" src={"/linkedin-profilepic.jpg"}/> 
             {/* src={"https://avatars.githubusercontent.com/u/28168454?v=4"}/> */}
           </div>
         </div>
@@ -139,7 +140,7 @@ function App() {
                 I continued to invest my interests in computers and technology since then.
               </span>
               <div className="h-40 rounded-full overflow-hidden drop-shadow-lg" style={{"minWidth": "10rem"}}>
-                <img className="h-44 max-w-none relative -top-0.5 -left-4" src={win95}/>
+                <img className="h-44 max-w-none relative -top-0.5 -left-4" src={'/win95-2.png'}/>
               </div>
             </div>
             <br/>
@@ -224,7 +225,7 @@ function App() {
           <div className="-mb-2 text-stone-200">
             Here are the highlights of some of the projects that I have worked on:
           </div>
-          <ProjectCard rightAlign={true} image={replaysPreview} title="RePlays"
+          <ProjectCard rightAlign={true} image={"/replays-preview.png"} title="RePlays"
             github="https://github.com/lulzsun/RePlays"
           >
             <span>
@@ -233,7 +234,7 @@ function App() {
               that allows for quick video sharing.
             </span>
           </ProjectCard>
-          <ProjectCard rightAlign={false} image={gecgosPreview} title="Gecgos.io"
+          <ProjectCard rightAlign={false} image={"/gecgos-preview.png"} title="Gecgos.io"
             github="https://github.com/lulzsun/gecgos.io"
           >
             <span>
@@ -286,4 +287,4 @@ function App() {
   )
 }
 
-export default App
+export {Page}
