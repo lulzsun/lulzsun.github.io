@@ -2,7 +2,7 @@ import React from 'react'
 
 export { Page }
 
-function Page({ is404 }: { is404: boolean }) {
+function Page({ is404 }: { is404: boolean }, {errorInfo} : {errorInfo: string}) {
   if (is404) {
     return (
       <>
@@ -15,6 +15,7 @@ function Page({ is404 }: { is404: boolean }) {
       <>
         <h1>500 Internal Server Error</h1>
         <p>Something went wrong.</p>
+        <p>{errorInfo}</p>
       </>
     )
   }

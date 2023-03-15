@@ -9,12 +9,12 @@ import { Github, Linkedin, FileEarmarkPdf, Envelope, XLg, Download, Printer } fr
 
 Modal.setAppElement('#root');
 
-export const meta = {
+export const metaData = {
   title: 'Jimmy Quach | Portfolio',
-  description: "Jimmy Quach's portfolio website and blog"
+  description: "Jimmy Quach's home on the web!"
 }
 
-function Page() {
+export function Page() {
   const [modalIsOpen, setIsOpen] = useState(false);
 
   function openModal() {
@@ -286,5 +286,3 @@ function Page() {
     </div>
   )
 }
-
-export {Page}

@@ -15,7 +15,7 @@ export type PageContextCustom = {
   pageProps?: PageProps
   urlPathname: string
   exports: {
-    meta?: {
+    metaData?: {
       title?: string
       description?: string
     }
