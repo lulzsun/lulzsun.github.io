@@ -148,7 +148,7 @@ function Page() {
           </div>
         </div>
         <div className="pt-4 flex flex-row">
-          <span className="text-white-200">"</span>
+          <span className="text-slate-200">"</span>
           <span className="text-red-400">;</span>
         </div>
       </div>
@@ -158,7 +158,7 @@ function Page() {
       <div className="flex flex-col sm:w-3/4 md:w-4/6 lg:w-3/5 xl:w-2/5 p-6">
         <ColumnHeader titleIndex="1"/>
         <div className="pl-4">
-          <div className="pb-4 text-white-200 text-2xl">
+          <div className="pb-4 text-slate-200 text-2xl">
             <span className="text-red-400 pr-1">&#123;</span>
             <span className="text-stone-400">/* Skills */</span>
             <span className="text-red-400 pl-1">&#125;</span>
@@ -207,7 +207,7 @@ function Page() {
           </div>
         </div>
         <div className="pt-4 flex flex-row">
-          <span className="text-white-200">"</span>
+          <span className="text-slate-200">"</span>
           <span className="text-red-400">;</span>
         </div>
       </div>
@@ -217,7 +217,7 @@ function Page() {
       <div className="flex flex-col sm:w-3/4 md:w-4/6 lg:w-3/5 xl:w-2/5 p-6">
         <ColumnHeader titleIndex="2"/>
         <div className="pl-4">
-          <div className="pb-4 text-white-200 text-2xl">
+          <div className="pb-4 text-slate-200 text-2xl">
             <span className="text-red-400 pr-1">&#123;</span>
             <span className="text-stone-400">/* Projects */</span>
             <span className="text-red-400 pl-1">&#125;</span>
@@ -246,7 +246,7 @@ function Page() {
           </ProjectCard>
         </div>
         <div className="pt-4 flex flex-row">
-          <span className="text-white-200">"</span>
+          <span className="text-slate-200">"</span>
           <span className="text-red-400">;</span>
         </div>
       </div>
