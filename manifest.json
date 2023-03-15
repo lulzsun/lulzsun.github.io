@@ -19,7 +19,7 @@
       "_c6cda039.js"
     ],
     "css": [
-      "assets/static/src/renderer/default.page.client.026bd1f7.css"
+      "assets/static/src/renderer/default.page.client.859d34ea.css"
     ]
   },
   "src/renderer/_error.page.tsx": {
@@ -70,7 +70,7 @@
     "file": "assets/chunks/53e1064b.js"
   },
   "src/renderer/_default.page.client.css": {
-    "file": "assets/static/src/renderer/default.page.client.026bd1f7.css",
+    "file": "assets/static/src/renderer/default.page.client.859d34ea.css",
     "src": "src/renderer/_default.page.client.css"
   }
 }
