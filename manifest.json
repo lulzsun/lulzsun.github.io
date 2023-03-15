@@ -1,6 +1,6 @@
 {
   "src/pages/index.page.client.tsx": {
-    "file": "assets/src/pages/index.page.client.1b0f05c8.js",
+    "file": "assets/src/pages/index.page.client.04b29e90.js",
     "src": "src/pages/index.page.client.tsx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -32,7 +32,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.e7453b23.js",
+    "file": "assets/entry-client-routing.22114f9b.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -45,7 +45,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.ddc0e1ad.js",
+    "file": "assets/entry-server-routing.c19e9aa9.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
