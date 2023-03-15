@@ -3,9 +3,10 @@ import ProjectCard from "../components/ProjectCard";
 import Modal from 'react-modal';
 import { useState } from "react";
 import { Resume, ResumePDF } from "../components/Resume";
-import { pdf } from '@react-pdf/renderer';
-import { saveAs } from 'file-saver';
 import { Github, Linkedin, FileEarmarkPdf, Envelope, XLg, Download, Printer } from 'react-bootstrap-icons';
+import { pdf } from '@react-pdf/renderer';
+import fileSaver from 'file-saver';
+const { saveAs } = fileSaver;
 
 Modal.setAppElement('#root');
 
