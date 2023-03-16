@@ -10,7 +10,9 @@ const passToClient = ['pageProps', 'documentProps', 'someAsyncProps']
 
 async function render(pageContext: PageContextServer) {
   const { Page, pageProps } = pageContext;
-  const { metaData } = pageContext.exports;
+  let { metaData } = pageContext.exports;
+  // @ts-ignore // blog posts carry metaData differently. this is probably not a good idea, but it works ¯\_(ツ)_/¯
+  if (pageContext.metaData) { metaData = pageContext.metaData;}
   const title = (metaData && metaData.title) || "Jimmy forgot to put a title"
   const description = (metaData && metaData.description) || "Jimmy forgot to put a description"
 

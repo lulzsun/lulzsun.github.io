@@ -26,5 +26,4 @@ async function render(pageContext: PageContextClient) {
     }
     root.render(page)
   }
-  // document.title = getPageTitle(pageContext)
 }
