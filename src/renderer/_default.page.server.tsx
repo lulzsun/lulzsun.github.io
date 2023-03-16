@@ -1,5 +1,6 @@
 import ReactDOMServer from 'react-dom/server'
-import { escapeInject } from 'vite-plugin-ssr'
+import { escapeInject, dangerouslySkipEscape } from 'vite-plugin-ssr'
+import PageShell from '../components/PageShell'
 import type { PageContextServer } from '../types'
 
 export { render }
@@ -14,7 +15,9 @@ async function render(pageContext: PageContextServer) {
   const description = (metaData && metaData.description) || "Jimmy forgot to put a description"
 
   const pageHtml = ReactDOMServer.renderToString(
-    <Page {...pageProps} />
+    <PageShell>
+      <Page {...pageProps} />
+    </PageShell>
   )
 
   return escapeInject`<!DOCTYPE html>
@@ -24,7 +27,7 @@ async function render(pageContext: PageContextServer) {
         <meta name="description" content="${description}" />
       </head>
       <body>
-        <div id="root">${pageHtml}</div>
+        <div id="root">${dangerouslySkipEscape(pageHtml)}</div>
       </body>
     </html>`;
 }

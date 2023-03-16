@@ -1,6 +1,7 @@
 export { render }
 
 import ReactDOM from 'react-dom/client'
+import PageShell from '../components/PageShell'
 import '../index.css'
 import { PageContextClient } from '../types'
 
@@ -12,7 +13,9 @@ let root: ReactDOM.Root
 async function render(pageContext: PageContextClient) {
   const { Page, pageProps } = pageContext
   const page = (
-    <Page {...pageProps} />
+    <PageShell>
+      <Page {...pageProps} />
+    </PageShell>
   )
   const container = document.getElementById('root')!
   if (pageContext.isHydration) {
