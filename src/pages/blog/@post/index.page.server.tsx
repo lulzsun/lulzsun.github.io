@@ -12,11 +12,10 @@ const __dirname = path.dirname(__filename);
 export { onBeforeRender }
 export { prerender }
 
-const postIds = fs.readdirSync(path.join(__dirname, '/posts'), { withFileTypes: true })
-  .filter(dirent => dirent.isDirectory())
-  .map(dirent => dirent.name);
-
 async function onBeforeRender(pageContext: PageContextBuiltIn) {
+  const postIds = fs.readdirSync(path.join(__dirname, '/posts'), { withFileTypes: true })
+    .filter(dirent => dirent.isDirectory())
+    .map(dirent => dirent.name);
   const { post } = pageContext.routeParams
   if (postIds.length == 0 || !postIds.includes(post)) {
     const is404 = false;
@@ -34,5 +33,8 @@ async function onBeforeRender(pageContext: PageContextBuiltIn) {
 }
 
 function prerender(): string[] {
+  const postIds = fs.readdirSync(path.join(__dirname, '/posts'), { withFileTypes: true })
+    .filter(dirent => dirent.isDirectory())
+    .map(dirent => dirent.name);
   return ['/blog', ...postIds.map((post) => `/blog/${post}`)]
 }
