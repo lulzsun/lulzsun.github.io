@@ -1,1 +1,1 @@
-{"pageContext":{"_pageId":"/src/pages/blog","pageProps":"!undefined","documentProps":"!undefined","someAsyncProps":"!undefined"}}
+{"pageContext":{"_pageId":"/src/pages/blog","pageProps":{"posts":["my-first-blog-post","my-second-blog-post"]},"documentProps":"!undefined","someAsyncProps":"!undefined"}}
