@@ -1,7 +1,7 @@
 import { Github, Linkedin, FileEarmarkPdf, ChatLeftQuoteFill } from 'react-bootstrap-icons';
 import ColumnHeader from "../components/ColumnHeader";
 import ProjectCard from "../components/ProjectCard";
-import Portrait from "../components/Portrait";
+import Header from "../components/Header";
 import Modal from 'react-modal';
 
 Modal.setAppElement('#root');
@@ -13,24 +13,16 @@ export const metaData = {
 
 export function Page() {
   return (<>
+{/*        */}
+{/* HEADER */}
+{/*        */}
     <div className="sm:w-3/4 md:w-4/6 lg:w-3/5 xl:w-2/5 p-6">
-      <div className="flex flex-row">
-        <div className="flex flex-col">
-          <div className="pb-4 text-red-400">Hello! My name is</div>
-          <div className="pb-4 text-red-300 text-3xl md:text-4xl lg:text-5xl">Jimmy Quach.</div>
-          <div className="pb-4 text-stone-400 text-3xl md:text-4xl lg:text-5xl whitespace-nowrap">
-            I build cool stuff.
-          </div>
+      <Header greeting="Hello! My name is" title="Jimmy Quach" description="I build cool stuff.">
+        <div className="text-stone-200">
+          I'm a software developer & engineer working on building amazing applications for users in the future, 
+          specializing in both web and desktop applications at the moment.
         </div>
-        <div className="grow"></div>
-        <div className="h-40 w-40 drop-shadow-lg" style={{"minWidth": "10rem"}}>
-          <Portrait/>
-        </div>
-      </div>
-      <div className="text-stone-200">
-        I'm a software developer & engineer working on building amazing applications for users in the future, 
-        specializing in both web and desktop applications at the moment.
-      </div>
+      </Header>
     </div>
 {/*              */}
 {/* STICKY LINKS */}
