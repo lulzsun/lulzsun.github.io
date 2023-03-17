@@ -1,0 +1,1 @@
+import{j as r,F as s,a as e}from"../../../../chunks/64a26f21.js";const i={title:"Jimmy forgot a title for this blog post...",description:"Jimmy forgot a description for this blog post..."},n=({post:t,pageHtml:o})=>r(s,{children:[t,e("td",{dangerouslySetInnerHTML:{__html:o}})]});export{n as Page,i as metaData};
