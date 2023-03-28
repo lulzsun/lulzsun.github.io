@@ -52,8 +52,8 @@ export const Page: React.FC<Props> = ({posts}) => {
 {/* BLOG CARDS */}
 {/*            */}
     <div className="grid gap-4 sm:w-3/4 md:w-4/6 lg:w-3/5 xl:w-2/5 p-6 -my-6">
-      {posts.map((post, i) => {
-        return <BlogCard key={i} metaData={post.metaData} >{}</BlogCard>;
+      {Object.keys(posts).map((_post, i) => {
+        return <BlogCard key={i} metaData={posts[i].metaData} >{}</BlogCard>;
       })}
     </div>
   </>
