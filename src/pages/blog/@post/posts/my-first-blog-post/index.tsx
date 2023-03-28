@@ -51,8 +51,8 @@ export const Page: React.FC = () => {
       <Canvas>
         <ambientLight />
         <pointLight position={[10, 10, 10]} />
-        <Box position={[-1.2, 0, 0]} />
-        <Box position={[1.2, 0, 0]} />
+        <Box position={[-3, 0, 0]} />
+        <Box position={[3, 0, 0]} />
       </Canvas>
       <ReactMarkdown components={MarkdownComponents}
         rehypePlugins={[rehypeRaw]} children={dedent`
@@ -95,7 +95,7 @@ function Box(props: ThreeElements['mesh']) {
     <mesh
       {...props}
       ref={ref}
-      scale={clicked ? 1.5 : 1}
+      scale={clicked ? 4 : 3}
       onClick={(event) => click(!clicked)}
       onPointerOver={(event) => hover(true)}
       onPointerOut={(event) => hover(false)}>
