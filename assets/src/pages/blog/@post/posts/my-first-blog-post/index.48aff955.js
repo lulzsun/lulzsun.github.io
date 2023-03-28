@@ -3290,4 +3290,4 @@ No matching component was found for:
         But I will try my best at documenting my life, interests, and whatnot here when I feel like I'm in the mood to write blog posts.
 
         Thanks for reading this terrible mess of a blog post. Bet there's not even a dozen readers of this post 🙄.
-      `})]})});function Vg(l){const e=Xe.exports.useRef(null),[t,n]=Xe.exports.useState(!1),[i,r]=Xe.exports.useState(!1);return O3((a,c)=>e.current.rotation.x+=c),Wh("mesh",{...l,ref:e,scale:i?1.5:1,onClick:a=>r(!i),onPointerOver:a=>n(!0),onPointerOut:a=>n(!1),children:[Xt("boxGeometry",{args:[1,1,1]}),Xt("meshStandardMaterial",{color:t?"hotpink":"orange"})]})}export{hE as Page,hE as default,uE as metaData};
+      `})]})});function Vg(l){const e=Xe.exports.useRef(null),[t,n]=Xe.exports.useState(!1),[i,r]=Xe.exports.useState(!1);return O3((a,c)=>e.current.rotation.x+=c),Wh("mesh",{...l,ref:e,scale:i?1.5:1,onClick:a=>r(!i),onPointerOver:a=>n(!0),onPointerOut:a=>n(!1),children:[Xt("boxGeometry",{args:[1,1,1]}),Xt("meshStandardMaterial",{color:t?"hotpink":"orange"})]})}export{hE as Page,uE as metaData};
