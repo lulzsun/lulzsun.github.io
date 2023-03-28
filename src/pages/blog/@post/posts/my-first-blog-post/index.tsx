@@ -1,10 +1,11 @@
+import * as THREE from 'three';
+import { useRef, useState } from 'react';
+import { Canvas, useFrame, ThreeElements } from '@react-three/fiber';
+import { MarkdownComponents } from '../../../../../components/blog/MarkdownComponents';
 import ReactMarkdown from 'react-markdown';
 import dedent from "dedent";
-import { MarkdownComponents } from '../../../../../components/blog/MarkdownComponents';
+import remarkGfm from 'remark-gfm';
 import rehypeRaw from 'rehype-raw';
-import * as THREE from 'three'
-import { useRef, useState } from 'react'
-import { Canvas, useFrame, ThreeElements } from '@react-three/fiber'
 
 export const metaData = {
   title: 'My first blog post! | Jimmy Quach',
@@ -16,10 +17,10 @@ export const metaData = {
 export const Page: React.FC = () => {
   return <>
     <div className='w-5/6 sm:w-3/4 md:w-4/6 lg:w-3/5 xl:w-2/5 flex flex-col gap-6'>
-      <ReactMarkdown components={MarkdownComponents}
+      <ReactMarkdown components={MarkdownComponents} remarkPlugins={[remarkGfm]}
         rehypePlugins={[rehypeRaw]} children={dedent`
         # My first blog post!
-        This is the start of my awesome and amazing blog! <span class='text-xs'>(sarcasm)</span>
+        This is the start of my awesome and amazing blog! <span class='text-xs'>/sarcasm</span>
 
         As part of a front-end course at my university, I was tasked to create a project built using front-end technologies. At the time, I wasn't sure
         what I wanted to make, so I settled to create this portfolio website.
@@ -40,6 +41,13 @@ export const Page: React.FC = () => {
         \`\`\`js
         console.log("hello world");
         \`\`\`
+
+        Or display tables:
+
+        | Syntax      | Description |
+        | ----------- | ----------- |
+        | Header      | Title       |
+        | Paragraph   | Text        |
 
         This way, I don't have to build out HTML/JSX components to write simple blog posts like this whenever I want to create a simple text post.
 

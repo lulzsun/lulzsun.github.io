@@ -4,6 +4,7 @@ import { a11yDark } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 import { CodeProps } from "react-markdown/lib/ast-to-react";
 
 export const MarkdownComponents: Components = {
+  a: ({ href, children }) => <a href={href} className="underline underline-offset-2 text-red-300">{children}</a>,
   h1: ({ children }) => <h1 className="text-3xl font-bold">{children}</h1>,
   h2: ({ children }) => <h2 className="text-2xl font-bold">{children}</h2>,
   h3: ({ children }) => <h3 className="text-xl font-bold">{children}</h3>,
