@@ -1,6 +1,5 @@
 import Portrait from "./Portrait";
 import Confetti from 'react-confetti';
-import { useMeasure } from 'react-use';
 
 interface Props {
   greeting: JSX.Element|JSX.Element[]|string,
@@ -9,16 +8,14 @@ interface Props {
   children?: JSX.Element|JSX.Element[]|string
 }
 
-
 export const Header: React.FC<Props> = ({greeting, title, description, children}) => {
-  const [ref, { width, height }] = useMeasure();
   const todaysDate = new Date();
   let isBirthday = todaysDate.getMonth() === 4 && todaysDate.getDay() === 7;
 
   return (<>
     {/* @ts-ignore */}
-    <div ref={ref} className="relative flex flex-row">
-      {isBirthday && <Confetti style={{position: 'absolute'}} width={width} height={height} gravity={0.005} numberOfPieces={100}/>}
+    <div className="relative flex flex-row">
+      {/* {isBirthday && <Confetti style={{position: 'absolute'}} width={width} height={height} gravity={0.005} numberOfPieces={100}/>} */}
       <span className="inline-block text-red-400 pb-4">
         {greeting}<br/>
         <span className="inline-block py-4 text-red-300 text-3xl md:text-4xl lg:text-5xl whitespace-nowrap">{title}</span><br/>
