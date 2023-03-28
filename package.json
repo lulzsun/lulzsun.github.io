@@ -13,6 +13,8 @@
   },
   "dependencies": {
     "@react-pdf/renderer": "^3.0.1",
+    "@react-three/fiber": "^8.12.0",
+    "@types/three": "^0.150.0",
     "dedent": "^0.7.0",
     "events": "^3.3.0",
     "file-saver": "^2.0.5",
@@ -25,6 +27,7 @@
     "react-syntax-highlighter": "^15.5.0",
     "react-use": "^17.4.0",
     "rehype-raw": "^6.1.1",
+    "three": "^0.150.1",
     "vite-plugin-ssr": "^0.4.94"
   },
   "devDependencies": {
