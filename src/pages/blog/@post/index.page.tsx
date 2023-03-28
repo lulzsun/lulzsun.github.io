@@ -1,6 +1,5 @@
-import { FC, forwardRef, ReactNode, useEffect, useRef } from "react"
+import { FC, useEffect, useRef } from "react"
 import { Comments } from "../../../components/blog/Comments"
-import type { Override } from "react";
 
 interface Props {
   post: string
