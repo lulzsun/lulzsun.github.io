@@ -20,6 +20,19 @@ async function onBeforeRender() {
   }
 }
 
+async function prerender() {
+  const posts = await getAllBlogPosts();
+
+  return [{
+    url: '/blog',
+    pageContext: {
+      pageProps: {
+        posts
+      }
+    }
+  }]
+}
+
 async function getAllBlogPosts() {
   const posts = fs.readdirSync(path.join(__dirname, '/blog/@post/posts'), { withFileTypes: true })
     .filter(dirent => dirent.isDirectory())
@@ -32,17 +45,4 @@ async function getAllBlogPosts() {
     postsWithMetadata.push({metaData});
   }
   return postsWithMetadata;
-}
-
-async function prerender() {
-  const posts = getAllBlogPosts()
-
-  return [{
-    url: '/blog',
-    pageContext: {
-      pageProps: {
-        posts
-      }
-    }
-  }]
 }

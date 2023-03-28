@@ -1,4 +1,4 @@
-import { FC, useEffect, useRef } from "react"
+import { lazy, Suspense } from "react"
 import { Comments } from "../../../components/blog/Comments"
 
 interface Props {
@@ -12,40 +12,19 @@ export const metaData = {
 }
 
 export const Page: React.FC<Props> = ({post, pageHtml}) => {
+  const BlogPost = lazy(() => import(`./posts/${post}/index.tsx`).then(module => ({ default: module.Page })));
+  
   return <>
     <div className="sm:w-3/4 md:w-4/6 lg:w-3/5 xl:w-2/5 p-6">
       <span className="text-red-400 pb-4">
         reader@jimmyqua.ch:~/blog/{post}$
       </span>
     </div>
-    <RawHtml html={pageHtml}/>
+    <Suspense fallback={<div className="w-full flex justify-center" dangerouslySetInnerHTML={{__html: pageHtml}}/>}>
+      <BlogPost/>
+    </Suspense>
     <div className="w-5/6 sm:w-3/4 md:w-4/6 lg:w-3/5 xl:w-2/5 pt-6 -mb-8">
       <Comments post={post}/>
     </div>
   </>
-}
-
-interface RawHtmlProps {
-  html: string
-}
-
-const RawHtml: FC<RawHtmlProps> = ({ html }) => {
-  const ref = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-      if (!ref.current) return
-
-      // make a js fragment element
-      const fragment = document.createDocumentFragment()
-
-      // move every child from our div to new fragment
-      while (ref.current.childNodes[0]) {
-          fragment.appendChild(ref.current.childNodes[0])
-      }
-
-      // and after all replace the div with fragment
-      ref.current.replaceWith(fragment)
-  }, [ref])
-
-  return <div ref={ref} dangerouslySetInnerHTML={{ __html: html }}></div>
 }
