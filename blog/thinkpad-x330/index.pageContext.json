@@ -1,1 +1,1 @@
-{"pageContext":{"_pageId":"/src/pages/blog/@post/index","pageProps":{"post":"thinkpad-x330","pageHtml":""},"documentProps":"!undefined","someAsyncProps":"!undefined"}}
+{"pageContext":{"_pageId":"/src/pages/blog/@post/index","pageProps":{"post":"thinkpad-x330","pageHtml":"<div class=\"w-5/6 sm:w-3/4 md:w-4/6 lg:w-3/5 xl:w-2/5 flex flex-col gap-6\"><h1 class=\"text-3xl font-bold\">ThinkPad x230 (x330)</h1>\n<p>Blog to be written...</p></div>"},"documentProps":"!undefined","someAsyncProps":"!undefined"}}
