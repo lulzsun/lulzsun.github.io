@@ -36,5 +36,5 @@ function prerender(): string[] {
   const postIds = fs.readdirSync(path.join(__dirname, '/posts'), { withFileTypes: true })
     .filter(dirent => dirent.isDirectory())
     .map(dirent => dirent.name);
-  return ['/blog', ...postIds.map((post) => `/blog/${post}`)]
+  return [...postIds.map((post) => `/blog/${post}`)]
 }
