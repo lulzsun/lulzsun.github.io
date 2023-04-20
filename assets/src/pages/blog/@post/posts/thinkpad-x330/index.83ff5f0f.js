@@ -1,4 +1,4 @@
-import{R as t,M as o,a,d as i,r}from"../../../../../../chunks/60640ff5.js";import{a as e,F as s,j as n}from"../../../../../../chunks/fd325986.js";import"../../../../../../chunks/53706c28.js";import"../../../../../../chunks/8f284688.js";const u={title:"ThinkPad x230 (x330) | Jimmy Quach",description:"My documented adventure where I mod my personal laptop.",tags:["hardware","modding"],createdAt:new Date("2023-3-27")};function c(){return e(s,{children:n("div",{className:"w-5/6 sm:w-3/4 md:w-4/6 lg:w-3/5 xl:w-2/5 flex flex-col gap-6",children:[e(t,{components:o,rehypePlugins:[a],children:i`
+import{R as t,M as o,r as a,a as i,d as r}from"../../../../../../chunks/60640ff5.js";import{a as e,F as s}from"../../../../../../chunks/fd325986.js";import"../../../../../../chunks/53706c28.js";import"../../../../../../chunks/8f284688.js";const u={title:"ThinkPad x230 (x330) | Jimmy Quach",description:"My documented adventure where I mod my personal laptop.",tags:["hardware","modding"],createdAt:new Date("2023-3-27")};function p(){return e(s,{children:e("div",{className:"w-5/6 sm:w-3/4 md:w-4/6 lg:w-3/5 xl:w-2/5 flex flex-col gap-6",children:e(t,{components:o,remarkPlugins:[a],rehypePlugins:[i],children:r`
         # ThinkPad x230 (x330)
         This blog post will be a documentation of upgrading a ThinkPad x230.
 
@@ -11,7 +11,12 @@ import{R as t,M as o,a,d as i,r}from"../../../../../../chunks/60640ff5.js";impor
 
         It is definitely an old laptop. So by the time anyone reads this post, I wouldn't recommend going through the process of 
         upgrading it like me (since the hardware of this laptop is really old), unless you want to do it for the experience of course.
-      `}),e("div",{className:"rounded-md border-2 border-yellow-500 text-yellow-500 text-sm p-2",children:"If you are reading this, this is not meant to be a guide or how-to. Only reference from here if you are troubleshooting anything, especially the coreboot section."}),e(t,{components:o,remarkPlugins:[r],rehypePlugins:[a],children:i`
+
+        <div className='rounded-md border-2 border-yellow-500 text-yellow-500 text-sm p-2'>
+        If you are reading this, this is not meant to be a guide or how-to. 
+        Only reference from here if you are troubleshooting anything, especially the coreboot section.
+        </div>
+        
         ## Upgrading soldered CPU
         Unfortunately, the CPU on this laptop is soldered and the one that I had was an i5. 
         I knew I wanted a more powerful one, so the only obvious choice would be to buy a new
@@ -150,4 +155,4 @@ import{R as t,M as o,a,d as i,r}from"../../../../../../chunks/60640ff5.js";impor
         feel free to reach out if you do need more information or help.
 
         This blog post may be updated/revised in the future.
-      `})]})})}export{c as Page,u as metaData};
+      `})})})}export{p as Page,u as metaData};
