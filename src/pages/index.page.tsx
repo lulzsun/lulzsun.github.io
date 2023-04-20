@@ -166,7 +166,7 @@ export function Page() {
             that allows for quick video sharing.
           </span>
         </ProjectCard>
-        <ProjectCard rightAlign={false} image={"/gecgos-preview.png"} title="Gecgos.io"
+        <ProjectCard rightAlign={false} image={"/gecgos.svg"} title="Gecgos.io"
           github="https://github.com/lulzsun/gecgos.io"
         >
           <span>
