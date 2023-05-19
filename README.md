@@ -1,4 +1,4 @@
-# [lulzsun.github.io](lulzsun.github.io)
+# [lulzsun.github.io](https://lulzsun.github.io/)
 My portfolio website and blog! Built with Typescript, React, TailwindCSS, & Vite + vite-plugin-ssr 💖
 
 ## Development
