@@ -17,7 +17,7 @@ export const Page: React.FC<Props> = ({post, pageHtml}) => {
   return <>
     <div className="sm:w-3/4 md:w-4/6 lg:w-3/5 xl:w-2/5 p-6 flex flex-col">
       <span className="">
-        <a href="/" className="text-red-400 hover:underline underline-offset-2 hover:text-red-300">reader@lulzsun.github.io: ~</a>/
+        <a href="/" className="text-red-400 hover:underline underline-offset-2 hover:text-red-300">reader@jimmyqua.ch: ~</a>/
         <a href="/blog" className="text-red-400 hover:underline underline-offset-2 hover:text-red-300">blog</a>/
         {post} $
       </span>
