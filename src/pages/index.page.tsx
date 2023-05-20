@@ -2,6 +2,7 @@ import { Github, Linkedin, FileEarmarkPdf, ChatLeftQuoteFill } from 'react-boots
 import ColumnHeader from "../components/ColumnHeader";
 import ProjectCard from "../components/ProjectCard";
 import Header from "../components/Header";
+import Image from "../components/Image";
 import Modal from 'react-modal';
 
 Modal.setAppElement('#root');
@@ -72,7 +73,7 @@ export function Page() {
               I continued to invest my interests in computers and technology since then.
             </span>
             <div className="h-40 rounded-full overflow-hidden drop-shadow-lg" style={{"minWidth": "10rem"}}>
-              <img alt="baby jimmy in front of windows 95 computer" className="h-44 max-w-none relative -top-0.5 -left-4" src={'/win95-2.png'}/>
+              <Image alt="baby jimmy in front of windows 95 computer" className="h-44 max-w-none relative -top-0.5 -left-4" src={'/win95-2.png'}/>
             </div>
           </div>
           <br/>

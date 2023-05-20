@@ -1,4 +1,5 @@
 import { Github } from "react-bootstrap-icons";
+import Image from "./Image";
 
 interface Props {
     rightAlign: boolean,
@@ -11,7 +12,7 @@ interface Props {
 export const ProjectCard: React.FC<Props> = ({rightAlign, image, title, github, children}) => {
   return (
     <div className="relative py-8 h-72">
-    <img className={"relative " + (rightAlign ? "float-left" : "float-right") + " rounded-lg drop-shadow-lg h-56"} alt={"preview picture of " + title} src={image}/>
+    <Image className={"relative " + (rightAlign ? "float-left" : "float-right") + " rounded-lg drop-shadow-lg h-56"} alt={"preview picture of " + title} src={image}/>
     <div className={"absolute " + (rightAlign ? "left-1/2" : "right-1/2") + " bottom-0 rounded-xl drop-shadow-lg bg-stone-800 p-4 z-10 hover:z-20"}>
       <div className="flex text-stone-400 text-lg pl-1 pb-1.5">
         <span className="inline-block align-text-bottom">// {title}</span>
