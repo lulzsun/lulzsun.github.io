@@ -23,7 +23,7 @@ async function render(pageContext: PageContextServer) {
   )
 
   return escapeInject`<!DOCTYPE html>
-    <html>
+    <html lang="en">
       <head>
         <title>${title}</title>
         <meta name="description" content="${description}"/>

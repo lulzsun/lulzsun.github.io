@@ -4,8 +4,8 @@ export const Portrait: React.FC = () => {
 
   return (
     <div className="relative">
-      <img className="relative h-40 max-w-none rounded-full overflow-hidden" src={"/linkedin-profilepic.jpg"}/> 
-      {isBirthday && <img className="absolute -top-9 left-14" src="/partyhat.svg" alt="some text" width="42"/>}
+      <img alt="a picture of jimmy" className="relative h-40 max-w-none rounded-full overflow-hidden" src={"/linkedin-profilepic.jpg"}/> 
+      {isBirthday && <img alt="party hat on top of jimmy" className="absolute -top-9 left-14" src="/partyhat.svg" width="42"/>}
       {/* src={"https://avatars.githubusercontent.com/u/28168454?v=4"}/> */}
     </div>
   )
