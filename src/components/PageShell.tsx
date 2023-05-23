@@ -23,7 +23,7 @@ export const PageShell: React.FC<Props> = ({children}) => {
   }
   
   return (<>
-    <div className="flex flex-col items-center h-screen pt-10">
+    <div className="flex flex-col items-center h-screen pt-10 font-ptsans">
 {/*        */}
 {/* MODAL  */}
 {/*        */}
