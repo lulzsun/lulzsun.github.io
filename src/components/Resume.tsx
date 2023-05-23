@@ -70,7 +70,7 @@ const Resume = () => (
           <Text style={{flex: 1, textAlign: "center", fontSize: '20pt', fontStyle: 'bold', marginTop: '-5pt'}}>•</Text>
           <Text style={{textAlign: "center"}}>jminquach@gmail.com</Text>
           <Text style={{flex: 1, textAlign: "center", fontSize: '20pt', fontStyle: 'bold', marginTop: '-5pt'}}>•</Text>
-          <Text style={{textAlign: "center"}}>lulzsun.github.io</Text>
+          <Text style={{textAlign: "center"}}>www.jimmyqua.ch</Text>
         </View>
       {/* </View> */}
       <View style={styles.heading}>
@@ -99,11 +99,12 @@ const Resume = () => (
         <View style={{paddingBottom: '4pt', flexDirection: 'row'}}>
           <Text style={{flex: 1}}>
             Algorithm Engineering,
-            Computer Organization & Assembly Language Programming,
+            Assembly Language Programming,
             Compilers and Languages,
             File Structure & Database, 
             Java Programming,
-            Software Engineering
+            Software Engineering,
+            Web Front-End Engineering
           </Text>
         </View>
       </View>
@@ -126,7 +127,7 @@ const Resume = () => (
         </View>
         <View style={{paddingBottom: '5pt', width: '6.3in', flexDirection: 'row'}}>
           <Text style={{flex: "0.4pt"}}>Software/Tools:</Text>
-          <Text style={{flex: 1}}>Git, Visual Studio, VS Code, MongoDB, PostgreSQL, Supabase</Text>
+          <Text style={{flex: 1}}>Git, Visual Studio, VS Code, MongoDB, PostgreSQL, SQLite</Text>
         </View>
       </View>
 
@@ -202,11 +203,11 @@ const Resume = () => (
         </View>
         <View style={{paddingLeft: '32pt', marginTop: '-6pt', flexDirection: 'row'}}>
           <Text style={{flex: "0.04pt", fontSize: '20pt', fontStyle: 'bold', marginLeft: '-16pt'}}>•</Text>
-          <Text style={{flex: 1, marginTop: '6pt'}}>Using Supabase, an open-source Firebase alternative for managing a SQL database</Text>
+          <Text style={{flex: 1, marginTop: '6pt'}}>Using Pocketbase, an open-source Firebase alternative for managing a SQL database</Text>
         </View>
         <View style={{paddingLeft: '32pt', marginTop: '-6pt', flexDirection: 'row'}}>
           <Text style={{flex: "0.04pt", fontSize: '20pt', fontStyle: 'bold', marginLeft: '-16pt'}}>•</Text>
-          <Text style={{flex: 1, marginTop: '6pt'}}>Developed with React and Next.js frameworks, allowing for fast server-side rendering</Text>
+          <Text style={{flex: 1, marginTop: '6pt'}}>Developed with React and Vite, with custom framework for server-side rendering</Text>
         </View>
         <View style={{paddingLeft: '32pt', marginTop: '-6pt', flexDirection: 'row'}}>
           <Text style={{flex: "0.04pt", fontSize: '20pt', fontStyle: 'bold', marginLeft: '-16pt'}}>•</Text>
