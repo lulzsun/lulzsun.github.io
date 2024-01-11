@@ -11,18 +11,21 @@ export default defineConfig({
   plugins: [
     react(), 
     ssr({ prerender: true }),
-    viteImagemin({
-      plugins: {
-        jpg: imageminMozjpeg(),
-        png: imageminPngQuant()
-      },
-      makeWebp: {
+    {
+      ...viteImagemin({
         plugins: {
-          jpg: imageminWebp(),
-          png: imageminWebp(),
+          jpg: imageminMozjpeg(),
+          png: imageminPngQuant()
         },
-      }
-    }),
+        makeWebp: {
+          plugins: {
+            jpg: imageminWebp(),
+            png: imageminWebp(),
+          },
+        }
+      }),
+      apply: 'build',
+    }
   ],
   root: './',
   build: {
