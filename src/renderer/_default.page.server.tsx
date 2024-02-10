@@ -15,6 +15,7 @@ async function render(pageContext: PageContextServer) {
   if (pageContext.metaData) { metaData = pageContext.metaData;}
   const title = (metaData && metaData.title) || "Jimmy forgot to put a title"
   const description = (metaData && metaData.description) || "Jimmy forgot to put a description"
+  const redirectUrl = (metaData && metaData.redirectUrl) || ""
 
   const pageHtml = ReactDOMServer.renderToString(
     <PageShell>
@@ -28,6 +29,7 @@ async function render(pageContext: PageContextServer) {
         <title>${title}</title>
         <meta name="description" content="${description}"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="Refresh" content="${redirectUrl !== "" ? "0" : "-1"}; url='${redirectUrl}'" />
       </head>
       <body>
         <div id="root">${dangerouslySkipEscape(pageHtml)}</div>

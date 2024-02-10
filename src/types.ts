@@ -18,6 +18,7 @@ export type PageContextCustom = {
     metaData?: {
       title?: string
       description?: string
+      redirectUrl?: string
     }
   }
 }
