@@ -1,35 +1,12 @@
 {
-  "src/pages/blog.page.tsx": {
-    "file": "assets/src/pages/blog.page.8c60e991.js",
-    "src": "src/pages/blog.page.tsx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_d968b52b.js",
-      "_1d195bb4.js",
-      "_9097e7d9.js"
-    ]
-  },
-  "src/pages/index.page.tsx": {
-    "file": "assets/src/pages/index.page.34d46857.js",
-    "src": "src/pages/index.page.tsx",
-    "isEntry": true,
-    "isDynamicEntry": true,
-    "imports": [
-      "_1d195bb4.js",
-      "_b5b40d6e.js",
-      "_d968b52b.js",
-      "_9097e7d9.js"
-    ]
-  },
   "src/renderer/_default.page.client.tsx": {
-    "file": "assets/src/renderer/default.page.client.9840b8ef.js",
+    "file": "assets/src/renderer/default.page.client.6e4dba10.js",
     "src": "src/renderer/_default.page.client.tsx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_b5b40d6e.js",
-      "_d968b52b.js",
+      "_f0d4ae2b.js",
+      "_64d0f127.js",
       "_9097e7d9.js",
       "_53706c28.js"
     ],
@@ -38,40 +15,72 @@
     ]
   },
   "src/renderer/_error.page.tsx": {
-    "file": "assets/src/renderer/error.page.513e0e95.js",
+    "file": "assets/src/renderer/error.page.e4a7b323.js",
     "src": "src/renderer/_error.page.tsx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_d968b52b.js"
+      "_64d0f127.js"
+    ]
+  },
+  "src/pages/blog.page.tsx": {
+    "file": "assets/src/pages/blog.page.221a1ef6.js",
+    "src": "src/pages/blog.page.tsx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_64d0f127.js",
+      "_978823dc.js",
+      "_9097e7d9.js"
+    ]
+  },
+  "src/pages/index.page.tsx": {
+    "file": "assets/src/pages/index.page.100dcdbc.js",
+    "src": "src/pages/index.page.tsx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_978823dc.js",
+      "_f0d4ae2b.js",
+      "_64d0f127.js",
+      "_9097e7d9.js"
     ]
   },
   "src/pages/git/gecgos.io.page.tsx": {
-    "file": "assets/src/pages/git/gecgos.io.page.4eb1cfaa.js",
+    "file": "assets/src/pages/git/gecgos.io.page.a4e1f07a.js",
     "src": "src/pages/git/gecgos.io.page.tsx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_d968b52b.js"
+      "_64d0f127.js"
     ]
   },
   "src/pages/git/replays.page.tsx": {
-    "file": "assets/src/pages/git/replays.page.189ba6d0.js",
+    "file": "assets/src/pages/git/replays.page.8b5decd0.js",
     "src": "src/pages/git/replays.page.tsx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_d968b52b.js"
+      "_64d0f127.js"
+    ]
+  },
+  "src/pages/git/whirled.page.tsx": {
+    "file": "assets/src/pages/git/whirled.page.b83c60c4.js",
+    "src": "src/pages/git/whirled.page.tsx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_64d0f127.js"
     ]
   },
   "src/pages/blog/@post/index.page.tsx": {
-    "file": "assets/src/pages/blog/@post/index.page.f8ada9c6.js",
+    "file": "assets/src/pages/blog/@post/index.page.27c21762.js",
     "src": "src/pages/blog/@post/index.page.tsx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_7fb08ce2.js",
-      "_d968b52b.js"
+      "_64d0f127.js"
     ],
     "dynamicImports": [
       "src/pages/blog/@post/posts/my-first-blog-post/index.tsx",
@@ -79,7 +88,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.507d49dd.js",
+    "file": "assets/entry-client-routing.f2a53047.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -91,13 +100,14 @@
       "src/pages/blog/@post/index.page.tsx",
       "src/pages/git/gecgos.io.page.tsx",
       "src/pages/git/replays.page.tsx",
+      "src/pages/git/whirled.page.tsx",
       "src/pages/index.page.tsx",
       "src/renderer/_error.page.tsx",
       "src/renderer/_default.page.client.tsx"
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.5ff7153b.js",
+    "file": "assets/entry-server-routing.5fb0f1f3.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
@@ -109,32 +119,33 @@
       "src/pages/blog/@post/index.page.tsx",
       "src/pages/git/gecgos.io.page.tsx",
       "src/pages/git/replays.page.tsx",
+      "src/pages/git/whirled.page.tsx",
       "src/pages/index.page.tsx",
       "src/renderer/_error.page.tsx",
       "src/renderer/_default.page.client.tsx"
     ]
   },
-  "_1d195bb4.js": {
-    "file": "assets/chunks/1d195bb4.js",
+  "_64d0f127.js": {
+    "file": "assets/chunks/64d0f127.js"
+  },
+  "_f0d4ae2b.js": {
+    "file": "assets/chunks/f0d4ae2b.js",
     "imports": [
-      "_d968b52b.js"
-    ]
-  },
-  "_d968b52b.js": {
-    "file": "assets/chunks/d968b52b.js"
-  },
-  "_9097e7d9.js": {
-    "file": "assets/chunks/9097e7d9.js"
-  },
-  "_b5b40d6e.js": {
-    "file": "assets/chunks/b5b40d6e.js",
-    "imports": [
-      "_d968b52b.js",
+      "_64d0f127.js",
       "_9097e7d9.js"
     ]
   },
   "_53706c28.js": {
     "file": "assets/chunks/53706c28.js"
+  },
+  "_9097e7d9.js": {
+    "file": "assets/chunks/9097e7d9.js"
+  },
+  "_978823dc.js": {
+    "file": "assets/chunks/978823dc.js",
+    "imports": [
+      "_64d0f127.js"
+    ]
   },
   "_7fb08ce2.js": {
     "file": "assets/chunks/7fb08ce2.js"
@@ -143,31 +154,31 @@
     "file": "assets/chunks/aeeb5bf5.js"
   },
   "src/pages/blog/@post/posts/my-first-blog-post/index.tsx": {
-    "file": "assets/src/pages/blog/@post/posts/my-first-blog-post/index.a9346e0a.js",
+    "file": "assets/src/pages/blog/@post/posts/my-first-blog-post/index.ce9b4969.js",
     "src": "src/pages/blog/@post/posts/my-first-blog-post/index.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_d968b52b.js",
-      "_11ffb75a.js",
+      "_64d0f127.js",
+      "_55d29c35.js",
       "_53706c28.js",
       "_9097e7d9.js"
     ]
   },
-  "_11ffb75a.js": {
-    "file": "assets/chunks/11ffb75a.js",
+  "_55d29c35.js": {
+    "file": "assets/chunks/55d29c35.js",
     "imports": [
-      "_d968b52b.js",
+      "_64d0f127.js",
       "_53706c28.js",
       "_9097e7d9.js"
     ]
   },
   "src/pages/blog/@post/posts/thinkpad-x330/index.tsx": {
-    "file": "assets/src/pages/blog/@post/posts/thinkpad-x330/index.2e12d46f.js",
+    "file": "assets/src/pages/blog/@post/posts/thinkpad-x330/index.64a0e477.js",
     "src": "src/pages/blog/@post/posts/thinkpad-x330/index.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_11ffb75a.js",
-      "_d968b52b.js",
+      "_55d29c35.js",
+      "_64d0f127.js",
       "_53706c28.js",
       "_9097e7d9.js"
     ]
