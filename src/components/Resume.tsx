@@ -137,7 +137,7 @@ const Resume = () => (
       <View style={styles.section}>
         <View style={{paddingBottom: '4pt', flexDirection: 'row'}}>
           <Text style={{flex: 1, fontStyle: 'bold'}}>RePlays</Text>
-          <Text style={{textAlign: "right"}}>github.com/lulzsun/RePlays</Text>
+          <Text style={{textAlign: "right"}}>jimmyqua.ch/git/replays</Text>
         </View>
         <View style={{paddingBottom: '4pt', flexDirection: 'row'}}>
           <Text style={{flex: 1}}>A desktop application that automatically 
@@ -169,7 +169,7 @@ const Resume = () => (
       <View style={styles.section}>
         <View style={{paddingBottom: '4pt', paddingTop: '4pt', flexDirection: 'row'}}>
           <Text style={{flex: 1, fontStyle: 'bold'}}>Gecgos.io</Text>
-          <Text style={{textAlign: "right"}}>github.com/lulzsun/gecgos.io</Text>
+          <Text style={{textAlign: "right"}}>jimmyqua.ch/git/gecgos.io</Text>
         </View>
         <View style={{paddingBottom: '4pt', flexDirection: 'row'}}>
           <Text style={{flex: 1}}>A re-implementation of an open source library called
@@ -193,7 +193,7 @@ const Resume = () => (
       <View style={styles.section}>
         <View style={{paddingBottom: '4pt', paddingTop: '4pt', flexDirection: 'row'}}>
           <Text style={{flex: 1, fontStyle: 'bold'}}>Whirled</Text>
-          <Text style={{textAlign: "right"}}>In Progress</Text>
+          <Text style={{textAlign: "right"}}>whirled.jimmyqua.ch</Text>
         </View>
         <View style={{paddingBottom: '4pt', flexDirection: 'row'}}>
           <Text style={{flex: 1}}>
