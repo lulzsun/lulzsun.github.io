@@ -83,7 +83,7 @@ const Resume = () => (
         </View>
         <View style={{paddingBottom: '4pt', flexDirection: 'row'}}>
           <Text style={{flex: 1}}>Bachelor of Science In Computer Science</Text>
-          <Text style={{textAlign: "right"}}>Expected: June 2024</Text>
+          <Text style={{textAlign: "right"}}>May 2024</Text>
         </View>o
         <View style={{paddingBottom: '2pt', flexDirection: 'row'}}>
           <Text style={{flex: 1, fontStyle: 'bold'}}>Fullerton College</Text>
