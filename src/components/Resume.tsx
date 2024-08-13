@@ -84,7 +84,7 @@ const Resume = () => (
         <View style={{paddingBottom: '4pt', flexDirection: 'row'}}>
           <Text style={{flex: 1}}>Bachelor of Science In Computer Science</Text>
           <Text style={{textAlign: "right"}}>May 2024</Text>
-        </View>o
+        </View>
         <View style={{paddingBottom: '2pt', flexDirection: 'row'}}>
           <Text style={{flex: 1, fontStyle: 'bold'}}>Fullerton College</Text>
           <Text style={{textAlign: "right"}}>Fullerton, CA</Text>
@@ -123,11 +123,11 @@ const Resume = () => (
         </View>
         <View style={{paddingBottom: '5pt', width: '6.3in', flexDirection: 'row'}}>
           <Text style={{flex: "0.4pt"}}>Frameworks/Libraries:</Text>
-          <Text style={{flex: 1}}>.NET Core, Node.js, Next.js, React, TailwindCSS, Three.js</Text>
+          <Text style={{flex: 1}}>.NET Core, Node.js, Next.js, React, TailwindCSS</Text>
         </View>
         <View style={{paddingBottom: '5pt', width: '6.3in', flexDirection: 'row'}}>
           <Text style={{flex: "0.4pt"}}>Software/Tools:</Text>
-          <Text style={{flex: 1}}>Git, Visual Studio, VS Code, MongoDB, PostgreSQL, SQLite</Text>
+          <Text style={{flex: 1}}>Docker, Git, PostgreSQL, Visual Studio, VS Code, SQLite</Text>
         </View>
       </View>
 
@@ -159,7 +159,7 @@ const Resume = () => (
         </View>
         <View style={{paddingLeft: '32pt', marginTop: '-6pt', flexDirection: 'row'}}>
           <Text style={{flex: "0.04pt", fontSize: '20pt', fontStyle: 'bold', marginLeft: '-16pt'}}>•</Text>
-          <Text style={{flex: 1, marginTop: '6pt'}}>Developed assisting C# wrapper around C++ library to hook into low level functions</Text>
+          <Text style={{flex: 1, marginTop: '6pt'}}>Developed assisting C# wrapper around C++ library to hook low-level system functions</Text>
         </View>
         <View style={{paddingLeft: '32pt', marginTop: '-6pt', flexDirection: 'row'}}>
           <Text style={{flex: "0.04pt", fontSize: '20pt', fontStyle: 'bold', marginLeft: '-16pt'}}>•</Text>
@@ -179,7 +179,7 @@ const Resume = () => (
         </View>
         <View style={{paddingLeft: '32pt', marginTop: '-6pt', flexDirection: 'row'}}>
           <Text style={{flex: "0.04pt", fontSize: '20pt', fontStyle: 'bold', marginLeft: '-16pt'}}>•</Text>
-          <Text style={{flex: 1, marginTop: '6pt'}}>Rewrote original library's Node.js/Typescript codebase to Go for better performance</Text>
+          <Text style={{flex: 1, marginTop: '6pt'}}>Rewrote original library's Node.js/Typescript codebase in Go for better performance</Text>
         </View>
         <View style={{paddingLeft: '32pt', marginTop: '-6pt', flexDirection: 'row'}}>
           <Text style={{flex: "0.04pt", fontSize: '20pt', fontStyle: 'bold', marginLeft: '-16pt'}}>•</Text>
@@ -198,7 +198,7 @@ const Resume = () => (
         <View style={{paddingBottom: '4pt', flexDirection: 'row'}}>
           <Text style={{flex: 1}}>
             A social media platform in which users interact with each other in 3-Dimensional virtual spaces with virtual avatars.
-            Heavily inspired by Metaverse & VRChat's virtual realities.
+            Final project for university's senior capstone course.
           </Text>
         </View>
         <View style={{paddingLeft: '32pt', marginTop: '-6pt', flexDirection: 'row'}}>
@@ -228,9 +228,9 @@ const Resume = () => (
             3D printing, 
             Electronics & soldering, 
             Hardware development (PCB Schematics & Design), 
+            Open-source software,
             Self-hosted web services,
-            Video games (League of Legends, Tekken),
-            Virtualization (Proxmox)
+            Virtualization (Proxmox, Docker)
           </Text>
         </View>
       </View>
