@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
   page: {
     flexDirection: 'column',
     margin: '1in',
-    marginTop: '0.85in',
+    marginTop: '0.65in',
   },
   header: {
     fontFamily: 'Petrona',
@@ -79,7 +79,7 @@ const Resume = () => (
       <View style={styles.section}>
         <View style={{paddingBottom: '2pt', flexDirection: 'row'}}>
           <Text style={{flex: 1, fontStyle: 'bold'}}>California State University, Fullerton</Text>
-          <Text style={{textAlign: "right"}}>Fullerton, CA</Text>
+          <Text style={{textAlign: "right", fontStyle: 'bold'}}>Fullerton, CA</Text>
         </View>
         <View style={{paddingBottom: '4pt', flexDirection: 'row'}}>
           <Text style={{flex: 1}}>Bachelor of Science In Computer Science</Text>
@@ -87,13 +87,13 @@ const Resume = () => (
         </View>
         <View style={{paddingBottom: '2pt', flexDirection: 'row'}}>
           <Text style={{flex: 1, fontStyle: 'bold'}}>Fullerton College</Text>
-          <Text style={{textAlign: "right"}}>Fullerton, CA</Text>
+          <Text style={{textAlign: "right", fontStyle: 'bold'}}>Fullerton, CA</Text>
         </View>
         <View style={{paddingBottom: '4pt', flexDirection: 'row'}}>
           <Text style={{flex: 1}}>Associate of Science In Computer Science</Text>
           <Text style={{textAlign: "right"}}>May 2022</Text>
         </View>
-        <View style={{paddingBottom: '2pt', flexDirection: 'row'}}>
+        {/* <View style={{paddingBottom: '2pt', flexDirection: 'row'}}>
           <Text style={{fontStyle: 'bold'}}>Noteworthy Courses: </Text>
         </View>
         <View style={{paddingBottom: '4pt', flexDirection: 'row'}}>
@@ -106,6 +106,36 @@ const Resume = () => (
             Software Engineering,
             Web Front-End Engineering
           </Text>
+        </View> */}
+      </View>
+
+      <View style={styles.heading}>
+        <Text>PROFESSIONAL EXPERIENCE</Text>
+      </View>
+      <View style={styles.section}>
+        <View style={{paddingBottom: '4pt', flexDirection: 'row'}}>
+          <Text style={{flex: 1, fontStyle: 'bold'}}>Osmosys AI</Text>
+          <Text style={{textAlign: "right", fontStyle: 'bold'}}>Remote, Online</Text>
+        </View>
+        <View style={{paddingBottom: '4pt', flexDirection: 'row'}}>
+          <Text style={{flex: 1}}>Freelance Full-stack Software Developer</Text>
+          <Text style={{textAlign: "right"}}>December 2023 - March 2024</Text>
+        </View>
+        <View style={{paddingLeft: '32pt', marginTop: '-6pt', flexDirection: 'row'}}>
+          <Text style={{flex: "0.04pt", fontSize: '20pt', fontStyle: 'bold', marginLeft: '-16pt'}}>•</Text>
+          <Text style={{flex: 1, marginTop: '6pt'}}>Handled rebuilding existing frontend services to be deployed to Vercel using CI/CD</Text>
+        </View>
+        <View style={{paddingLeft: '32pt', marginTop: '-6pt', flexDirection: 'row'}}>
+          <Text style={{flex: "0.04pt", fontSize: '20pt', fontStyle: 'bold', marginLeft: '-16pt'}}>•</Text>
+          <Text style={{flex: 1, marginTop: '6pt'}}>Developed and managed backend services to be deployed to Amazon Web Services</Text>
+        </View>
+        <View style={{paddingLeft: '32pt', marginTop: '-6pt', flexDirection: 'row'}}>
+          <Text style={{flex: "0.04pt", fontSize: '20pt', fontStyle: 'bold', marginLeft: '-16pt'}}>•</Text>
+          <Text style={{flex: 1, marginTop: '6pt'}}>Built Discord chat bot using Python capable of handling over 16,000 active users</Text>
+        </View>
+        <View style={{paddingLeft: '32pt', marginTop: '-6pt', flexDirection: 'row'}}>
+          <Text style={{flex: "0.04pt", fontSize: '20pt', fontStyle: 'bold', marginLeft: '-16pt'}}>•</Text>
+          <Text style={{flex: 1, marginTop: '6pt'}}>Assisted in migrating existing MySQL database over to Amazon RDS for PostgreSQL</Text>
         </View>
       </View>
 
@@ -137,7 +167,7 @@ const Resume = () => (
       <View style={styles.section}>
         <View style={{paddingBottom: '4pt', flexDirection: 'row'}}>
           <Text style={{flex: 1, fontStyle: 'bold'}}>RePlays</Text>
-          <Text style={{textAlign: "right"}}>jimmyqua.ch/git/replays</Text>
+          <Text style={{textAlign: "right", fontStyle: 'bold'}}>jimmyqua.ch/git/replays</Text>
         </View>
         <View style={{paddingBottom: '4pt', flexDirection: 'row'}}>
           <Text style={{flex: 1}}>A desktop application that automatically 
@@ -169,7 +199,7 @@ const Resume = () => (
       <View style={styles.section}>
         <View style={{paddingBottom: '4pt', paddingTop: '4pt', flexDirection: 'row'}}>
           <Text style={{flex: 1, fontStyle: 'bold'}}>Gecgos.io</Text>
-          <Text style={{textAlign: "right"}}>jimmyqua.ch/git/gecgos.io</Text>
+          <Text style={{textAlign: "right", fontStyle: 'bold'}}>jimmyqua.ch/git/gecgos.io</Text>
         </View>
         <View style={{paddingBottom: '4pt', flexDirection: 'row'}}>
           <Text style={{flex: 1}}>A re-implementation of an open source library called
@@ -179,7 +209,7 @@ const Resume = () => (
         </View>
         <View style={{paddingLeft: '32pt', marginTop: '-6pt', flexDirection: 'row'}}>
           <Text style={{flex: "0.04pt", fontSize: '20pt', fontStyle: 'bold', marginLeft: '-16pt'}}>•</Text>
-          <Text style={{flex: 1, marginTop: '6pt'}}>Rewrote original library's Node.js/Typescript codebase in Go for better performance</Text>
+          <Text style={{flex: 1, marginTop: '6pt'}}>Rewrote original library's Node.js/Typescript codebase in Go to improve performance</Text>
         </View>
         <View style={{paddingLeft: '32pt', marginTop: '-6pt', flexDirection: 'row'}}>
           <Text style={{flex: "0.04pt", fontSize: '20pt', fontStyle: 'bold', marginLeft: '-16pt'}}>•</Text>
@@ -193,12 +223,12 @@ const Resume = () => (
       <View style={styles.section}>
         <View style={{paddingBottom: '4pt', paddingTop: '4pt', flexDirection: 'row'}}>
           <Text style={{flex: 1, fontStyle: 'bold'}}>Whirled</Text>
-          <Text style={{textAlign: "right"}}>whirled.jimmyqua.ch</Text>
+          <Text style={{textAlign: "right", fontStyle: 'bold'}}>whirled.jimmyqua.ch</Text>
         </View>
         <View style={{paddingBottom: '4pt', flexDirection: 'row'}}>
           <Text style={{flex: 1}}>
             A social media platform in which users interact with each other in 3-Dimensional virtual spaces with virtual avatars.
-            Final project for university's senior capstone course.
+            Submitted to university's senior capstone course as final project.
           </Text>
         </View>
         <View style={{paddingLeft: '32pt', marginTop: '-6pt', flexDirection: 'row'}}>
@@ -219,7 +249,7 @@ const Resume = () => (
         </View>
       </View>
 
-      <View style={styles.heading}>
+      {/* <View style={styles.heading}>
         <Text>PERSONAL INTERESTS</Text>
       </View>
       <View style={styles.section}>
@@ -233,7 +263,7 @@ const Resume = () => (
             Virtualization (Proxmox, Docker)
           </Text>
         </View>
-      </View>
+      </View> */}
     </Page>
   </Document>
 );
