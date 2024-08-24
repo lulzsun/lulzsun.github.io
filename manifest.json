@@ -23,7 +23,7 @@
     ]
   },
   "src/renderer/_default.page.client.tsx": {
-    "file": "assets/src/renderer/default.page.client.befc0734.js",
+    "file": "assets/src/renderer/default.page.client.f823c833.js",
     "src": "src/renderer/_default.page.client.tsx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -88,7 +88,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.526908d2.js",
+    "file": "assets/entry-client-routing.624a6e40.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -107,7 +107,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.267efe2d.js",
+    "file": "assets/entry-server-routing.369932b0.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
