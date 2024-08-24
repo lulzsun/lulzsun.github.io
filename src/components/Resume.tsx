@@ -93,20 +93,6 @@ const Resume = () => (
           <Text style={{flex: 1}}>Associate of Science In Computer Science</Text>
           <Text style={{textAlign: "right"}}>May 2022</Text>
         </View>
-        {/* <View style={{paddingBottom: '2pt', flexDirection: 'row'}}>
-          <Text style={{fontStyle: 'bold'}}>Noteworthy Courses: </Text>
-        </View>
-        <View style={{paddingBottom: '4pt', flexDirection: 'row'}}>
-          <Text style={{flex: 1}}>
-            Algorithm Engineering,
-            Assembly Language Programming,
-            Compilers and Languages,
-            File Structure & Database, 
-            Java Programming,
-            Software Engineering,
-            Web Front-End Engineering
-          </Text>
-        </View> */}
       </View>
 
       <View style={styles.heading}>
@@ -248,22 +234,6 @@ const Resume = () => (
           <Text style={{flex: 1, marginTop: '6pt'}}>Back-end written in Go to sync player movements using UDP network communication</Text>
         </View>
       </View>
-
-      {/* <View style={styles.heading}>
-        <Text>PERSONAL INTERESTS</Text>
-      </View>
-      <View style={styles.section}>
-        <View style={{paddingBottom: '5pt', width: '6.3in', flexDirection: 'row'}}>
-          <Text>
-            3D printing, 
-            Electronics & soldering, 
-            Hardware development (PCB Schematics & Design), 
-            Open-source software,
-            Self-hosted web services,
-            Virtualization (Proxmox, Docker)
-          </Text>
-        </View>
-      </View> */}
     </Page>
   </Document>
 );
