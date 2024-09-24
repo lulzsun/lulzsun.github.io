@@ -19,7 +19,9 @@ export function Page() {
       </div>
       <div className="w-5/6 sm:w-3/4 md:w-4/6 lg:w-3/5 xl:w-2/5 pt-6 text-center space-y-8">
         <h1>RePlays is a free and open source program that automatically manages recording of detected running games, with a clip editor that allows for quick video sharing.</h1>
-        <Image alt="image preview of replays" className="h-64" src={'/replays-preview.png'}/>
+        <div className="grid justify-items-center">
+          <Image alt="image preview of replays" className="h-64" src={'/replays-preview.png'}/>
+        </div>
         <h1>
           This project had an interesting history where it first started off as a reverse engineering, client modification of a recording application called Plays. 
           <br/><br/>
