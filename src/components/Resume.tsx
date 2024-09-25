@@ -85,14 +85,22 @@ const Resume = () => (
           <Text style={{flex: 1}}>Bachelor of Science In Computer Science</Text>
           <Text style={{textAlign: "right"}}>May 2024</Text>
         </View>
-        <View style={{paddingBottom: '2pt', flexDirection: 'row'}}>
+        <View style={{paddingLeft: '32pt', marginTop: '-6pt', flexDirection: 'row'}}>
+          <Text style={{flex: "0.04pt", fontSize: '20pt', fontStyle: 'bold', marginLeft: '-16pt'}}>•</Text>
+          <Text style={{flex: 1, marginTop: '6pt'}}>GPA: 3.82, Awards: Dean's List 2022-2023</Text>
+        </View>
+        <View style={{paddingLeft: '32pt', marginTop: '-6pt', flexDirection: 'row'}}>
+          <Text style={{flex: "0.04pt", fontSize: '20pt', fontStyle: 'bold', marginLeft: '-16pt'}}>•</Text>
+          <Text style={{flex: 1, marginTop: '6pt'}}>Capstone Project: Developed full-stack social media platform with 3D web technology</Text>
+        </View>
+        {/* <View style={{paddingBottom: '2pt', flexDirection: 'row'}}>
           <Text style={{flex: 1, fontStyle: 'bold'}}>Fullerton College</Text>
           <Text style={{textAlign: "right", fontStyle: 'bold'}}>Fullerton, CA</Text>
         </View>
         <View style={{paddingBottom: '4pt', flexDirection: 'row'}}>
           <Text style={{flex: 1}}>Associate of Science In Computer Science</Text>
           <Text style={{textAlign: "right"}}>May 2022</Text>
-        </View>
+        </View> */}
       </View>
 
       <View style={styles.heading}>
