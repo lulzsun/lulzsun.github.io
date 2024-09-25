@@ -66,7 +66,7 @@ const Resume = () => (
         <View style={styles.contact}>
           <Text style={{textAlign: "center"}}>(714) 623-3495</Text>
           <Text style={{flex: 1, textAlign: "center", fontSize: '20pt', fontStyle: 'bold', marginTop: '-5pt'}}>•</Text>
-          <Text style={{textAlign: "center"}}>Fullerton, CA</Text>
+          <Text style={{textAlign: "center"}}>U.S. Citizen</Text>
           <Text style={{flex: 1, textAlign: "center", fontSize: '20pt', fontStyle: 'bold', marginTop: '-5pt'}}>•</Text>
           <Text style={{textAlign: "center"}}>jminquach@gmail.com</Text>
           <Text style={{flex: 1, textAlign: "center", fontSize: '20pt', fontStyle: 'bold', marginTop: '-5pt'}}>•</Text>
@@ -223,11 +223,11 @@ const Resume = () => (
         </View>
         <View style={{paddingLeft: '32pt', marginTop: '-6pt', flexDirection: 'row'}}>
           <Text style={{flex: "0.04pt", fontSize: '20pt', fontStyle: 'bold', marginLeft: '-16pt'}}>•</Text>
-          <Text style={{flex: 1, marginTop: '6pt'}}>Developed with React and Vite, with custom framework for server-side rendering</Text>
+          <Text style={{flex: 1, marginTop: '6pt'}}>Developed with HTMX and Vite, with custom framework for server-side rendering</Text>
         </View>
         <View style={{paddingLeft: '32pt', marginTop: '-6pt', flexDirection: 'row'}}>
           <Text style={{flex: "0.04pt", fontSize: '20pt', fontStyle: 'bold', marginLeft: '-16pt'}}>•</Text>
-          <Text style={{flex: 1, marginTop: '6pt'}}>Designed with TailwindCSS & Mantine UI, with Three.js to render 3D environments</Text>
+          <Text style={{flex: 1, marginTop: '6pt'}}>Designed with TailwindCSS, with Three.js to render 3D scenes and player avatars</Text>
         </View>
         <View style={{paddingLeft: '32pt', marginTop: '-6pt', flexDirection: 'row'}}>
           <Text style={{flex: "0.04pt", fontSize: '20pt', fontStyle: 'bold', marginLeft: '-16pt'}}>•</Text>
