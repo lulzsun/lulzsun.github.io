@@ -70,7 +70,7 @@ const Resume = () => (
           <Text style={{flex: 1, textAlign: "center", fontSize: '20pt', fontStyle: 'bold', marginTop: '-5pt'}}>•</Text>
           <Text style={{textAlign: "center"}}>jminquach@gmail.com</Text>
           <Text style={{flex: 1, textAlign: "center", fontSize: '20pt', fontStyle: 'bold', marginTop: '-5pt'}}>•</Text>
-          <Text style={{textAlign: "center"}}>www.jminquach.com</Text>
+          <Text style={{textAlign: "center"}}>www.jimmyqua.ch</Text>
         </View>
       {/* </View> */}
       <View style={styles.heading}>
@@ -161,7 +161,7 @@ const Resume = () => (
       <View style={styles.section}>
         <View style={{paddingBottom: '4pt', flexDirection: 'row'}}>
           <Text style={{flex: 1, fontStyle: 'bold'}}>RePlays</Text>
-          <Text style={{textAlign: "right", fontStyle: 'bold'}}>jminquach.com/git/replays</Text>
+          <Text style={{textAlign: "right", fontStyle: 'bold'}}>jimmyqua.ch/git/replays</Text>
         </View>
         <View style={{paddingBottom: '4pt', flexDirection: 'row'}}>
           <Text style={{flex: 1}}>A desktop application that automatically 
@@ -193,7 +193,7 @@ const Resume = () => (
       <View style={styles.section}>
         <View style={{paddingBottom: '4pt', paddingTop: '4pt', flexDirection: 'row'}}>
           <Text style={{flex: 1, fontStyle: 'bold'}}>Gecgos.io</Text>
-          <Text style={{textAlign: "right", fontStyle: 'bold'}}>jminquach.com/git/gecgos.io</Text>
+          <Text style={{textAlign: "right", fontStyle: 'bold'}}>jimmyqua.ch/git/gecgos.io</Text>
         </View>
         <View style={{paddingBottom: '4pt', flexDirection: 'row'}}>
           <Text style={{flex: 1}}>A re-implementation of an open source library called
@@ -217,7 +217,7 @@ const Resume = () => (
       <View style={styles.section}>
         <View style={{paddingBottom: '4pt', paddingTop: '4pt', flexDirection: 'row'}}>
           <Text style={{flex: 1, fontStyle: 'bold'}}>Whirled</Text>
-          <Text style={{textAlign: "right", fontStyle: 'bold'}}>jminquach.com/git/whirled</Text>
+          <Text style={{textAlign: "right", fontStyle: 'bold'}}>jimmyqua.ch/git/whirled</Text>
         </View>
         <View style={{paddingBottom: '4pt', flexDirection: 'row'}}>
           <Text style={{flex: 1}}>
