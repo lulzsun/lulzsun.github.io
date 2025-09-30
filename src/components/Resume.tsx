@@ -109,10 +109,10 @@ const Resume = () => (
       <View style={styles.section}>
         <View style={{paddingBottom: '4pt', flexDirection: 'row'}}>
           <Text style={{flex: 1, fontStyle: 'bold'}}>Osmosys AI</Text>
-          <Text style={{textAlign: "right", fontStyle: 'bold'}}>Remote, Online</Text>
+          <Text style={{textAlign: "right", fontStyle: 'bold'}}>Remote, California</Text>
         </View>
         <View style={{paddingBottom: '4pt', flexDirection: 'row'}}>
-          <Text style={{flex: 1}}>Freelance Full-stack Software Developer</Text>
+          <Text style={{flex: 1}}>Full-stack Software Developer</Text>
           <Text style={{textAlign: "right"}}>December 2023 - March 2024</Text>
         </View>
         <View style={{paddingLeft: '32pt', marginTop: '-6pt', flexDirection: 'row'}}>
