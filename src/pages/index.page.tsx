@@ -96,6 +96,13 @@ export function Page() {
           that allows for quick video sharing.
         </span>
       </span>
+            <span className="flex">
+        <span className="px-2 select-none">•</span>
+        <span>
+          <a className="underline underline-offset-2 text-red-300" href="https://whirled.jimmyqua.ch">Whirled</a> is an interactive social media website where users control
+          their own avatars and visit virtual worlds. This is a passionate project of mine that is still work-in-progress, you can learn more at this <a className="underline underline-offset-2 text-red-300" href="/blog/what-is-whirled">blog post</a>.
+        </span>
+      </span>
       <span className="flex">
         <span className="px-2 select-none">•</span>
         <span>
