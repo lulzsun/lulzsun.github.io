@@ -12,7 +12,7 @@
     ]
   },
   "src/pages/index.page.tsx": {
-    "file": "assets/src/pages/index.page.a3de73fa.js",
+    "file": "assets/src/pages/index.page.a9abaee1.js",
     "src": "src/pages/index.page.tsx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -79,7 +79,7 @@
     ]
   },
   "src/pages/blog/@post/index.page.tsx": {
-    "file": "assets/src/pages/blog/@post/index.page.bfe44cb3.js",
+    "file": "assets/src/pages/blog/@post/index.page.06e0c8c6.js",
     "src": "src/pages/blog/@post/index.page.tsx",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -89,11 +89,12 @@
     ],
     "dynamicImports": [
       "src/pages/blog/@post/posts/my-first-blog-post/index.tsx",
-      "src/pages/blog/@post/posts/thinkpad-x330/index.tsx"
+      "src/pages/blog/@post/posts/thinkpad-x330/index.tsx",
+      "src/pages/blog/@post/posts/what-is-whirled/index.tsx"
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
-    "file": "assets/entry-client-routing.7a0a0118.js",
+    "file": "assets/entry-client-routing.59c6d036.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js",
     "isEntry": true,
     "imports": [
@@ -112,7 +113,7 @@
     ]
   },
   "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
-    "file": "assets/entry-server-routing.547fc582.js",
+    "file": "assets/entry-server-routing.eff32b96.js",
     "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js",
     "isEntry": true,
     "imports": [
@@ -187,6 +188,17 @@
   "src/pages/blog/@post/posts/thinkpad-x330/index.tsx": {
     "file": "assets/src/pages/blog/@post/posts/thinkpad-x330/index.b9da82b0.js",
     "src": "src/pages/blog/@post/posts/thinkpad-x330/index.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_675d432e.js",
+      "_18b1023c.js",
+      "_53706c28.js",
+      "_e76933c7.js"
+    ]
+  },
+  "src/pages/blog/@post/posts/what-is-whirled/index.tsx": {
+    "file": "assets/src/pages/blog/@post/posts/what-is-whirled/index.bc1e1133.js",
+    "src": "src/pages/blog/@post/posts/what-is-whirled/index.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_675d432e.js",
