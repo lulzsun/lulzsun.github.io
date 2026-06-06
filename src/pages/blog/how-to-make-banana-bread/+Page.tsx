@@ -11,7 +11,7 @@ export const metadata = {
   title: "How to Make Banana Bread | Jimmy Quach",
   description: "Baking Banana Bread, NO AI, NO CODE, all natural human instructions.",
   tags: ["baking", "recipe"],
-  createdAt: new Date("2026-6-6"),
+  created: new Date("2026-6-6"),
 };
 
 export default function Page() {

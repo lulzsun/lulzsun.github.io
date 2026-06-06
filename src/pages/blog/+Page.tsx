@@ -1,5 +1,6 @@
 import BlogCard from "../../components/blog/BlogCard.js";
 import Header from "../../components/Header.js";
+import { BlogFile, DocumentFile, Folder } from "../../components/Icons.js";
 import { PageMetadata } from "../../types.js";
 
 export const metadata = {
@@ -50,18 +51,71 @@ export default function Page() {
           </a>
         </div>
       </div>
-      {/*            */}
-      {/* BLOG CARDS */}
-      {/*            */}
-      <div className="grid gap-4 sm:w-3/4 md:w-4/6 lg:w-3/5 xl:w-2/5 p-6 -my-6">
-        {Object.entries(posts).map(([path, post]) => {
-          if (post.metadata) {
-            const slug = path.replace("./", "").replace("/+Page.tsx", "");
-            const metadata = { ...post.metadata, id: post.metadata.id ?? slug };
-            return <BlogCard key={path} metadata={metadata} />;
-          }
-        })}
-      </div>
+      {/*               */}
+      {/* BLOG EXPLORER */}
+      {/*               */}
+      <ul className="menu rounded-box sm:w-3/4 md:w-4/6 lg:w-3/5 xl:w-2/5 p-6 -my-6">
+        <li>
+          <details open>
+            <summary>
+              <Folder />
+              My Blog Posts
+            </summary>
+            <ul>
+              {Object.entries(posts)
+                .filter(([, post]) => post.metadata && !post.metadata.tags?.includes("recipe"))
+                .sort(([, a], [, b]) => {
+                  const dateA = new Date(a.metadata!.created ?? 0).getTime();
+                  const dateB = new Date(b.metadata!.created ?? 0).getTime();
+                  return dateA - dateB; // old to new
+                })
+                .map(([path, post]) => {
+                  if (post.metadata) {
+                    if (post.metadata.tags?.includes("recipe")) return null;
+                    const slug = path.replace("./", "").replace("/+Page.tsx", "");
+                    const metadata = { ...post.metadata, id: post.metadata.id ?? slug };
+                    return <BlogCard metadata={metadata} />;
+                  }
+                  return null;
+                })}
+              <li>
+                <details open>
+                  <summary>
+                    <Folder />
+                    Recipes
+                  </summary>
+                  <ul>
+                    {Object.entries(posts).map(([path, post]) => {
+                      if (post.metadata) {
+                        if (!post.metadata.tags?.includes("recipe")) return;
+                        const slug = path.replace("./", "").replace("/+Page.tsx", "");
+                        const metadata = { ...post.metadata, id: post.metadata.id ?? slug };
+                        return <BlogCard metadata={metadata} />;
+                      }
+                    })}
+                  </ul>
+                </details>
+              </li>
+            </ul>
+          </details>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+            <DocumentFile />
+            bitcoin-wallet-private-keys.txt
+          </a>
+        </li>
+        <li>
+          <a
+            onClick={() => {
+              document.getElementById("resumePdf")?.click();
+            }}
+          >
+            <DocumentFile />
+            resume.pdf
+          </a>
+        </li>
+      </ul>
     </>
   );
 }

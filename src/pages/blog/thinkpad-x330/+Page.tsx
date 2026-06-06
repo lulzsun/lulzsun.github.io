@@ -9,7 +9,7 @@ export const metadata = {
   title: "ThinkPad x230 (x330) | Jimmy Quach",
   description: "My documented adventure where I mod my personal laptop.",
   tags: ["hardware", "modding"],
-  createdAt: new Date("2023-3-27"),
+  created: new Date("2023-3-27"),
 };
 
 export default function Page() {

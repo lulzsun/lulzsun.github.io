@@ -4,4 +4,5 @@ export type PageMetadata = {
   description?: string;
   image?: string;
   tags?: string[];
+  created?: number;
 };

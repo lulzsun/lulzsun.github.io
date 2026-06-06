@@ -9,7 +9,7 @@ export const metadata = {
   title: "What in the Whirled? | Jimmy Quach",
   description: "Next-gen social media? Or one boy's garage dream project?",
   tags: ["software", "whirled"],
-  createdAt: new Date("2026-5-29"),
+  created: new Date("2026-5-29"),
 };
 
 export default function Page() {

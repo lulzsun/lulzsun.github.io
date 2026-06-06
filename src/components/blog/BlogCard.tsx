@@ -1,4 +1,5 @@
 import { PageMetadata } from "../../types";
+import { BlogFile } from "../Icons";
 
 interface Props {
   metadata: PageMetadata;
@@ -11,33 +12,32 @@ export const BlogCard: React.FC<Props> = ({ metadata, children }) => {
   }
 
   return (
-    <a
-      href={"/blog/" + metadata.id}
-      className="cursor-pointer w-full rounded-xl overflow-hidden bg-stone-800 shadow-lg"
-    >
-      <div className="px-6 py-4">
-        <div className="font-bold text-xl mb-2">
-          // {metadata.title?.replace(" | Jimmy Quach", "") || "(jimmy forgot the title)"}
-        </div>
-        <p className="text-base">
-          {metadata.description ||
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil."}
-        </p>
-      </div>
-      <div className="px-6 pt-4 pb-2">
-        {metadata.tags &&
-          metadata.tags.map((tag, i) => {
-            return (
-              <span
-                key={i}
-                className="inline-block bg-neutral-800 drop-shadow-lg rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2 duration-300"
-              >
-                #{tag}
-              </span>
-            );
-          })}
-      </div>
-    </a>
+    <li>
+      <a href={`/blog/${metadata.id}`}>
+        <BlogFile />
+        {metadata.id}.html
+      </a>
+      <ul className="pointer-events-none">
+        <li>
+          <a>
+            <span className="text-base-content/50 -mt-2">
+              <span className="font-bold">{metadata.title?.replace(" | Jimmy Quach", "") || "(missing title)"}</span> ·{" "}
+              <span className="text-xs italic ">{metadata.description || "(missing description)"}</span>
+            </span>
+            <div className="text-base-content/50 text-xs ml-auto flex gap-2">
+              {metadata.tags &&
+                metadata.tags.map((tag, i) => {
+                  return (
+                    <span key={i} className="">
+                      #{tag}
+                    </span>
+                  );
+                })}
+            </div>
+          </a>
+        </li>
+      </ul>
+    </li>
   );
 };
 

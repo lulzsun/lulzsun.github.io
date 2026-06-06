@@ -12,7 +12,7 @@ export const metadata = {
   title: "My first blog post! | Jimmy Quach",
   description: "Jimmy Quach's amazingly awesome and cool blog.",
   tags: ["epic"],
-  createdAt: new Date("2023-3-16"),
+  created: new Date("2023-3-16"),
 };
 
 export default function Page() {
