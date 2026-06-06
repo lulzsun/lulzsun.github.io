@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 
-html, body, #root {
+html,
+body,
+#root {
   min-height: 100vh;
   margin: 0;
 }
@@ -8,4 +10,5 @@ html, body, #root {
 body {
   color: rgb(168 162 158);
   background-color: rgb(32 32 32);
+  font-family: "PT Sans", sans-serif;
 }
