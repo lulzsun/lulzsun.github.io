@@ -1,1 +1,0 @@
-import{c as e}from"./chunk-BKYOcCV3.js";var t=e(),n=e=>(0,t.jsx)(`img`,{...e,src:e.src?.includes(`.svg`)?e.src:e.src+`.webp`});export{n as t};
