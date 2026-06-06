@@ -9,8 +9,7 @@ interface Props {
 
 export const BlogPost: React.FC<Props> = ({ children, comments }) => {
   const pageContext = usePageContext();
-  const post = pageContext.urlPathname.split("/").pop();
-  console.log("urlPathname:", pageContext.urlPathname, "post:", post);
+  const post = pageContext.urlPathname.replace(/\/$/, "").split("/").pop();
 
   return (
     <>
