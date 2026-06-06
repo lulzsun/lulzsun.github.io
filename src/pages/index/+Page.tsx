@@ -69,8 +69,9 @@ export default function Page() {
       {/* ABOUT ME */}
       {/*          */}
       <div className="flex flex-col sm:w-3/4 md:w-4/6 lg:w-3/5 xl:w-2/5 p-6">
-        <div className="pb-4 text-white-400 text-2xl">
-          <span className="text-stone-400">/* About Me */</span>
+        <div className="pb-4 flex items-center gap-3 w-full">
+          <span className="text-stone-400 text-2xl">About Me</span>
+          <div className="flex-1 border-t border-base-content/20" />
         </div>
         <div className="text-stone-200">
           <div className="flex flex-row">
@@ -110,8 +111,9 @@ export default function Page() {
       {/* PROJECTS */}
       {/*          */}
       <div className="flex flex-col sm:w-3/4 md:w-4/6 lg:w-3/5 xl:w-2/5 p-6">
-        <div className="pb-4 text-slate-200 text-2xl">
-          <span className="text-stone-400">/* Projects */</span>
+        <div className="pb-4 flex items-center gap-3 w-full">
+          <span className="text-stone-400 text-2xl">Projects</span>
+          <div className="flex-1 border-t border-base-content/20" />
         </div>
         <div className="pb-4 text-stone-200">
           Here are the highlights of some of the projects that I have worked on:
