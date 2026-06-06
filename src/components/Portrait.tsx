@@ -1,8 +1,13 @@
+import { useState, useEffect } from "react";
 import Image from "../components/Image";
 
 export const Portrait: React.FC = () => {
-  const todaysDate = new Date();
-  let isBirthday = todaysDate.getMonth() === 4 && todaysDate.getDay() === 7;
+  const [isBirthday, setIsBirthday] = useState(false);
+
+  useEffect(() => {
+    const todaysDate = new Date();
+    setIsBirthday(todaysDate.getMonth()+1 === 4 && todaysDate.getDate() === 7);
+  }, []);
 
   return (
     <div className="relative">
