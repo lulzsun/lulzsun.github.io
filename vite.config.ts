@@ -1,35 +1,24 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import ssr from 'vite-plugin-ssr/plugin'
-import viteImagemin from '@vheemstra/vite-plugin-imagemin'
-import imageminMozjpeg from 'imagemin-mozjpeg'
-import imageminPngQuant from 'imagemin-pngquant'
-import imageminWebp from 'imagemin-webp'
+import tailwindcss from "@tailwindcss/vite";
+import react from "@vitejs/plugin-react";
+import vike from "vike/plugin";
+import { defineConfig } from "vite";
+import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    react(), 
-    ssr({ prerender: true }),
-    {
-      ...viteImagemin({
-        plugins: {
-          jpg: imageminMozjpeg(),
-          png: imageminPngQuant()
-        },
-        makeWebp: {
-          plugins: {
-            jpg: imageminWebp(),
-            png: imageminWebp(),
-          },
-        }
-      }),
-      apply: 'build',
-    }
+    vike(),
+    react(),
+    tailwindcss(),
+    ViteImageOptimizer({
+      includePublic: true,
+      png: { quality: 80 },
+      jpeg: { quality: 80 },
+      jpg: { quality: 80 },
+      webp: { lossless: true },
+      avif: { lossless: false },
+      svg: {
+        plugins: [{ name: "removeViewBox" }],
+      },
+    }),
   ],
-  root: './',
-  build: {
-    outDir: 'dist',
-  },
-  publicDir: 'src/assets',
-})
+});

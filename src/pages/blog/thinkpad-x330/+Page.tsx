@@ -1,21 +1,26 @@
-import ReactMarkdown from 'react-markdown';
+import { MarkdownComponents } from "../../../components/blog/MarkdownComponents";
+import ReactMarkdown from "react-markdown";
 import dedent from "dedent";
-import { MarkdownComponents } from '../../../../../components/blog/MarkdownComponents';
-import rehypeRaw from 'rehype-raw';
-import remarkGfm from 'remark-gfm';
+import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
+import BlogPost from "../../../components/blog/BlogPost";
 
-export const metaData = {
-  title: 'ThinkPad x230 (x330) | Jimmy Quach',
+export const metadata = {
+  title: "ThinkPad x230 (x330) | Jimmy Quach",
   description: "My documented adventure where I mod my personal laptop.",
   tags: ["hardware", "modding"],
-  createdAt: new Date("2023-3-27")
-}
+  createdAt: new Date("2023-3-27"),
+};
 
-export function Page() {
-  return <>
-    <div className='w-5/6 sm:w-3/4 md:w-4/6 lg:w-3/5 xl:w-2/5 flex flex-col gap-6'>
-      <ReactMarkdown components={MarkdownComponents} remarkPlugins={[remarkGfm]}
-        rehypePlugins={[rehypeRaw]} children={dedent`
+export default function Page() {
+  return (
+    <BlogPost>
+      <div className="w-5/6 sm:w-3/4 md:w-4/6 lg:w-3/5 xl:w-2/5 flex flex-col gap-6">
+        <ReactMarkdown
+          components={MarkdownComponents}
+          remarkPlugins={[remarkGfm]}
+          rehypePlugins={[rehypeRaw]}
+          children={dedent`
         # ThinkPad x230 (x330)
         This blog post will be a documentation of upgrading a ThinkPad x230.
 
@@ -172,7 +177,9 @@ export function Page() {
         feel free to reach out if you do need more information or help.
 
         This blog post may be updated/revised in the future.
-      `}/>
-    </div>
-  </>
+      `}
+        />
+      </div>
+    </BlogPost>
+  );
 }

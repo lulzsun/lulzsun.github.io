@@ -1,24 +1,29 @@
-import * as THREE from 'three';
-import { useRef, useState } from 'react';
-import { Canvas, useFrame, ThreeElements } from '@react-three/fiber';
-import { MarkdownComponents } from '../../../../../components/blog/MarkdownComponents';
-import ReactMarkdown from 'react-markdown';
+import * as THREE from "three";
+import { useRef, useState } from "react";
+import { Canvas, useFrame, ThreeElements } from "@react-three/fiber";
+import { MarkdownComponents } from "../../../components/blog/MarkdownComponents";
+import ReactMarkdown from "react-markdown";
 import dedent from "dedent";
-import remarkGfm from 'remark-gfm';
-import rehypeRaw from 'rehype-raw';
+import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
+import BlogPost from "../../../components/blog/BlogPost";
 
-export const metaData = {
-  title: 'My first blog post! | Jimmy Quach',
+export const metadata = {
+  title: "My first blog post! | Jimmy Quach",
   description: "Jimmy Quach's amazingly awesome and cool blog.",
   tags: ["epic"],
-  createdAt: new Date("2023-3-16")
-}
+  createdAt: new Date("2023-3-16"),
+};
 
-export const Page: React.FC = () => {
-  return <>
-    <div className='w-5/6 sm:w-3/4 md:w-4/6 lg:w-3/5 xl:w-2/5 flex flex-col gap-6'>
-      <ReactMarkdown components={MarkdownComponents} remarkPlugins={[remarkGfm]}
-        rehypePlugins={[rehypeRaw]} children={dedent`
+export default function Page() {
+  return (
+    <BlogPost>
+      <div className="w-5/6 sm:w-3/4 md:w-4/6 lg:w-3/5 xl:w-2/5 flex flex-col gap-6">
+        <ReactMarkdown
+          components={MarkdownComponents}
+          remarkPlugins={[remarkGfm]}
+          rehypePlugins={[rehypeRaw]}
+          children={dedent`
         # My first blog post!
         This is the start of my awesome and amazing blog! <span class='text-xs'>/sarcasm</span>
 
@@ -55,15 +60,18 @@ export const Page: React.FC = () => {
         Markdown is cool and all, but really useful for just documentation, articles, text posts with no interactivity.
         
         So I decided that I wanted to incorperate javascript elements as well. This gives me the freedom to do things like this:
-      `}/>
-      <Canvas>
-        <ambientLight />
-        <pointLight position={[10, 10, 10]} />
-        <Box position={[-3, 0, 0]} />
-        <Box position={[3, 0, 0]} />
-      </Canvas>
-      <ReactMarkdown components={MarkdownComponents}
-        rehypePlugins={[rehypeRaw]} children={dedent`
+      `}
+        />
+        <Canvas>
+          <ambientLight />
+          <pointLight position={[10, 10, 10]} />
+          <Box position={[-3, 0, 0]} />
+          <Box position={[3, 0, 0]} />
+        </Canvas>
+        <ReactMarkdown
+          components={MarkdownComponents}
+          rehypePlugins={[rehypeRaw]}
+          children={dedent`
         ...while still allowing me to write most of the blog post in markdown.
 
         ## Comments
@@ -89,16 +97,18 @@ export const Page: React.FC = () => {
         But I will try my best at documenting my life, interests, and whatnot here when I feel like I'm in the mood to write blog posts.
 
         Thanks for reading this terrible mess of a blog post. Bet there's not even a dozen readers of this post 🙄.
-      `}/>
-    </div>
-  </>
+      `}
+        />
+      </div>
+    </BlogPost>
+  );
 }
 
-function Box(props: ThreeElements['mesh']) {
-  const ref = useRef<THREE.Mesh>(null!)
-  const [hovered, hover] = useState(false)
-  const [clicked, click] = useState(false)
-  useFrame((state, delta) => (ref.current.rotation.x += delta))
+function Box(props: ThreeElements["mesh"]) {
+  const ref = useRef<THREE.Mesh>(null!);
+  const [hovered, hover] = useState(false);
+  const [clicked, click] = useState(false);
+  useFrame((state, delta) => (ref.current.rotation.x += delta));
   return (
     <mesh
       {...props}
@@ -106,9 +116,10 @@ function Box(props: ThreeElements['mesh']) {
       scale={clicked ? 4 : 3}
       onClick={(event) => click(!clicked)}
       onPointerOver={(event) => hover(true)}
-      onPointerOut={(event) => hover(false)}>
+      onPointerOut={(event) => hover(false)}
+    >
       <boxGeometry args={[1, 1, 1]} />
-      <meshStandardMaterial color={hovered ? 'hotpink' : 'orange'} />
+      <meshStandardMaterial color={hovered ? "hotpink" : "orange"} />
     </mesh>
-  )
+  );
 }
