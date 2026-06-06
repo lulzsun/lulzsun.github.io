@@ -1,5 +1,6 @@
 import { usePageContext } from "vike-react/usePageContext";
 import { Comments } from "./Comments";
+import { useEffect, useState } from "react";
 
 interface Props {
   comments?: Boolean;
@@ -7,8 +8,12 @@ interface Props {
 }
 
 export const BlogPost: React.FC<Props> = ({ children, comments }) => {
-  const pageContext = usePageContext();
-  const post = pageContext.urlPathname.split("/").pop();
+  const [post, setPost] = useState<string | undefined>(undefined);
+
+  useEffect(() => {
+    setPost(window.location.pathname.split('/').pop());
+  }, []);
+
   return (
     <>
       <div className="sm:w-3/4 md:w-4/6 lg:w-3/5 xl:w-2/5 p-6 flex flex-col">
