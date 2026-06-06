@@ -43,6 +43,7 @@ export default function Page() {
           <IngredientCheckBox>30g white sugar</IngredientCheckBox>
           <IngredientCheckBox>30g brown sugar</IngredientCheckBox>
           <IngredientCheckBox>2 eggs room temp</IngredientCheckBox>
+          <IngredientCheckBox>A splash of vanilla extract</IngredientCheckBox>
           <div className="flex items-center gap-3 w-full my-4">
             <span className="text-2xl font-medium whitespace-nowrap">Instructions</span>
             <div className="flex-1 border-t border-base-content/20" />
@@ -72,8 +73,9 @@ export default function Page() {
               stick to the bottom of the sauce pan.<br/><br/>
               4. Add 1/3 of dry ingredients and 1/3 of the banana mixture to mixing bowl and mix in
               until fully mixed.<br/><br/>
-              5. Bake at 350 °F (175 °C) for 35-40 minutes, I use a medium size counter convection oven.<br/><br/>
-              6. Take out to cool for an hour or more, then serve!
+              5. Feel free to add a dash or splash of vanilla extract here if you haven't already.
+              6. Bake at 350 °F (175 °C) for 35-40 minutes, I use a medium size counter convection oven.<br/><br/>
+              7. Take out to cool for an hour or more, then serve!
             `}
           />
         </div>
