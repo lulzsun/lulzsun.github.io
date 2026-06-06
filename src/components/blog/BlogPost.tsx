@@ -8,11 +8,9 @@ interface Props {
 }
 
 export const BlogPost: React.FC<Props> = ({ children, comments }) => {
-  const [post, setPost] = useState<string | undefined>(undefined);
-
-  useEffect(() => {
-    setPost(window.location.pathname.split('/').pop());
-  }, []);
+  const pageContext = usePageContext();
+  const post = pageContext.urlPathname.split("/").pop();
+  console.log("urlPathname:", pageContext.urlPathname, "post:", post);
 
   return (
     <>

@@ -6,7 +6,7 @@ import vikeReact from "vike-react/config";
 
 const config: Config = {
   prerender: true,
-  passToClient: ["exports"],
+  passToClient: ["exports", "urlPathname"],
   extends: [vikeReact],
 };
 
