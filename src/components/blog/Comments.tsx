@@ -1,13 +1,20 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 interface Props {
   post: string
 } 
 
-export const Comments: React.FC<Props> = ({post}) => {
-  function componentDidMount() {
-    let script = document.createElement('script');
-    let anchor = document.getElementById('inject-comments-for-uterances');
+export const Comments: React.FC<Props> = ({ post }) => {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (!mounted) return;
+    const script = document.createElement('script');
+    const anchor = document.getElementById('inject-comments-for-uterances');
     script.setAttribute('src', 'https://utteranc.es/client.js');
     script.setAttribute('crossorigin', 'anonymous');
     script.setAttribute('async', 'true');
@@ -15,11 +22,9 @@ export const Comments: React.FC<Props> = ({post}) => {
     script.setAttribute('issue-term', post);
     script.setAttribute('theme', 'github-dark');
     anchor?.appendChild(script);
-  }
+  }, [mounted]);
 
-  useEffect(() => {
-    componentDidMount();
-  }, []);
+  if (!mounted) return null;
 
   return <div id="inject-comments-for-uterances" />;
-}
+};
