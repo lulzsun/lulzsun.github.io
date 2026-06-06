@@ -5,4 +5,5 @@ export type PageMetadata = {
   image?: string;
   tags?: string[];
   created?: number;
+  redirectUrl?: string;
 };
