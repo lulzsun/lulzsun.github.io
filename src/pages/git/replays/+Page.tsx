@@ -33,6 +33,11 @@ export default function Page() {
           After some time, I decided that re-developing the application from scratch would give me more freedom to
           develop without the restraints of the original proprietary software.
         </h1>
+        <span className="font-extrabold inline-flex items-center gap-1">
+          <span className="text-xl translate-y-1.5">***</span>
+          This Project was developed before AI coding became mainstream.
+          <span className="text-xl translate-y-1.5">***</span>
+        </span>
         <h1>
           Click{" "}
           <a className="underline underline-offset-2 text-red-300" href="https://github.com/lulzsun/gecgos.io">

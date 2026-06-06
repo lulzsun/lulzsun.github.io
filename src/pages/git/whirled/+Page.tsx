@@ -39,7 +39,14 @@ export default function Page() {
           <br />
           <br />
           This project was submitted to my university's senior capstone course as our final project.
+          <br />
+          <br />
         </h1>
+        <span className="font-extrabold inline-flex items-center gap-1">
+          <span className="text-xl translate-y-1.5">***</span>
+          This Project was developed before AI coding became mainstream.
+          <span className="text-xl translate-y-1.5">***</span>
+        </span>
         <h1>
           Click{" "}
           <a className="underline underline-offset-2 text-red-300" href="https://github.com/lulzsun/whirled2">
