@@ -92,7 +92,7 @@ const Resume = () => (
         </View>
         <View style={{ paddingBottom: "4pt", flexDirection: "row" }}>
           <Text style={{ flex: 1 }}>Bachelor of Science In Computer Science</Text>
-          <Text style={{ textAlign: "right" }}>May 2024</Text>
+          <Text style={{ textAlign: "right" }}>March 17, 2022 - May 24, 2024</Text>
         </View>
         <View style={{ paddingLeft: "32pt", marginTop: "-6pt", flexDirection: "row" }}>
           <Text style={{ flex: "0.04pt", fontSize: "20pt", fontWeight: "bold", marginLeft: "-16pt" }}>•</Text>
@@ -110,7 +110,7 @@ const Resume = () => (
         </View>
         <View style={{paddingBottom: '4pt', flexDirection: 'row'}}>
           <Text style={{flex: 1}}>Associate of Science In Computer Science</Text>
-          <Text style={{textAlign: "right"}}>May 2022</Text>
+          <Text style={{textAlign: "right"}}>August 28, 2017 - May 22, 2022</Text>
         </View> */}
       </View>
 
