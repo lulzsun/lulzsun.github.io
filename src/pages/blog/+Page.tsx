@@ -67,7 +67,7 @@ export default function Page() {
                 .sort(([, a], [, b]) => {
                   const dateA = new Date(a.metadata!.created ?? 0).getTime();
                   const dateB = new Date(b.metadata!.created ?? 0).getTime();
-                  return dateA - dateB; // old to new
+                  return dateB - dateA; // new to old
                 })
                 .map(([path, post]) => {
                   if (post.metadata) {
