@@ -1,0 +1,4 @@
+import{r as e}from"./chunk-Cyuzqnbw.js";import{d as t}from"./chunk-DDIPpknc.js";import{a as n,i as r,n as i,o as a,r as o,t as s}from"./chunk-D1V6t_Xa.js";var c=e({default:()=>d,metadata:()=>u}),l=t(),u={title:`What in the Whirled? | Jimmy Quach`,description:`Next-gen social media? Or one boy's garage dream project?`,tags:[`software`,`whirled`],created:new Date(`2026-5-29`)};function d(){return(0,l.jsx)(s,{children:(0,l.jsx)(`div`,{className:`w-5/6 sm:w-3/4 md:w-4/6 lg:w-3/5 xl:w-2/5 flex flex-col gap-6`,children:(0,l.jsx)(n,{components:a,remarkPlugins:[o],rehypePlugins:[i],children:r`
+        # What in the Whirled?
+        ...still writing this blog post! I can't believe you're here early!
+      `})})})}export{c as t};
