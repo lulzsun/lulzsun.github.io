@@ -39,8 +39,8 @@ export default function Page() {
             <div className="flex-1 border-t border-base-content/20" />
           </div>
           <span className="text-xl font-medium whitespace-nowrap">Mochi Dough</span>
-          <IngredientCheckBox>100g Glutinous rice flour</IngredientCheckBox>
-          <IngredientCheckBox>10g Rice flour</IngredientCheckBox>
+          <IngredientCheckBox>85g Glutinous rice flour</IngredientCheckBox>
+          <IngredientCheckBox>25g Rice flour</IngredientCheckBox>
           <IngredientCheckBox>10g Corn (or Wheat) starch</IngredientCheckBox>
           <IngredientCheckBox>10g Neutral vegetable oil (Corn/Soybean oil)</IngredientCheckBox>
           <IngredientCheckBox>175g Warm water</IngredientCheckBox>
@@ -74,18 +74,25 @@ export default function Page() {
               1. Transfer glutinous rice flour, normal rice flour, corn starch, and white sugar to a mixing bowl.
               2. Pour warm water (temp around 100-120F) to the dry mix and whisk. Yellow food coloring can optionally be added here.
               3. Add the neutral vegetable oil and whisk evenly.
-              4. Prepare a bowl or pan (use a square container preferably) for steaming, brush with corn oil, then pour dough through a strainer.
-              5. Steam for 30 minutes on high. After 30 minutes, set aside to cool.
+              4. Prepare a bowl or pan for steaming, brush with corn oil, then pour dough through a strainer.
+              5. Steam for 30 minutes on high. After 30 minutes, set aside to cool for around 15 minutes or until cool enough to handle.
               ### Durian Cream Filling
               1. In another mixing bowl, whip heavy cream and sugar to stiff peaks using electric mixer.
               2. Gently fold in 1/2 mashed durian flesh until fully incorporated.
-              3. Put cream filling in freezer for about 30 minutes or until slighty firm enough to handle.
+              3. Optionally, save some heavy cream (before whip) and durian flesh to a blender, then fold that in.
+              4. Put cream filling in freezer for about 30 minutes or until firm enough to handle.
               ### Assembly
               1. Spread out cling wrap onto work surface for rolling. 
-              2. Lightly dust work surface with shredded coconut flakes (and/or cornstarch) and spread out the mochi dough onto work surface.
+              2. Lightly dust work surface with shredded coconut flakes (and/or starch) and spread and knead out the mochi dough onto work surface.
+              3. Optionally, dust work surface with some cooked glutinous rice flour instead of starch.
+              <br/><br/>
+              Rice flour should be cooked/toasted as raw might be unsafe to consume.
+              <br/><br/>
+              While optional, this may be more traditional and preferred since the dusting of cornstarch may bring out more of the cornstarch flavor.
               3. Layer a second sheet of cling wrap on top of the mochi (sandwiching it), and start rolling out the dough to a desired thickness (maybe about 4mm in thickness)
               4. Scoop filling into roll and the saved 1/2 fresh/defrosted durian flesh in the middle of the dough.
               5. Connect one edge of the mochi dough to the other end and form the roll.
+              6. Chill in freezer to firm up for easy slicing.
             `}
           />
         </div>
