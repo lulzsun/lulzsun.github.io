@@ -566,9 +566,6 @@ export default function Page() {
                                     sleep 1
                                 done
 
-                                # Extract current network configurations before killing the stock processes
-                                CURRENT_IP=$(ifconfig wlan0 | grep 'inet addr' | awk '{print $2}' | sed 's/addr://')
-
                                 # Spin up the watchdog feeder loop so the device doesn't reset
                                 (
                                     while true; do
@@ -652,9 +649,27 @@ export default function Page() {
           remarkPlugins={[remarkGfm]}
           rehypePlugins={[rehypeRaw]}
           children={dedent`
-              ### Part 2?
-              If I figure out how to manage the GPIO pins (for stuff like enabling lights, built-in motion detect, etc.), 
+              ### RTSP Streams
+              - \`rtsp://192.168.1.X/av0_0/\` - HD Stream
+              - \`rtsp://192.168.1.X/av0_1/\` - SD Stream
+
+              ### What now?
+              Ideally now I would put this device on an IoT VLAN and prevent it from calling home. 
+              I would be losing some functionality through Tuya though, like 2-way audio, manually toggling floodlight, siren.
+              But for now I think this is fine if you just need a basic RTSP stream to feed it through your NVR software.
+
+              Reminder that I have only messed with the v0.3.9 revision at this point and have not tried tampering with the newer one.
+              If I get around to that, this blog post may be updated in the future when needed.
+
+              Also, if I figure out how to manage the GPIO pins (for stuff like enabling lights, built-in motion detect, etc.), 
               I'll probably write up a part 2 for that.
+
+              Maybe even play around with [OpenIPC](https://openipc.org/)...
+
+              ### Credits
+              - [Relevant Reddit thread](https://www.reddit.com/r/selfhosted/comments/kvzuxz/comment/kv2wglj/)
+              - [Insightful blog post](https://gurumeditation.org/1247/feit-sec3000-cam-bricked/)
+              - [Similar Tuya camera project](https://github.com/code-explorer1234/RTS3903N-Tuya-RTSPServer)
             `}
         />
       </div>
