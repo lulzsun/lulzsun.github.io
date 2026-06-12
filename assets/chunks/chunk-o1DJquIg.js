@@ -1,1 +1,0 @@
-import{d as e}from"./chunk-DDIPpknc.js";var t=e(),n=e=>{let n=e.src,r=n?.replace(/\.(png|jpe?g|gif)$/i,`.webp`);return(0,t.jsx)(`img`,{...e,src:n?.includes(`.svg`)?n:r})};export{n as t};
